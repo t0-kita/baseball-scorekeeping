@@ -1,0 +1,214 @@
+﻿<Page xmlns:my="using:Microsoft.Toolkit.Uwp.UI.Controls" 
+    x:Class="MMSS.OrderPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <NavigationView x:ConnectionId='2' x:Name="Navigations" 
+                        PaneDisplayMode="LeftMinimal" 
+                                                          
+                        IsPaneOpen="False" 
+                        Visibility="Visible">
+            <NavigationView.MenuItems>
+                <NavigationViewItem x:ConnectionId='12' x:Name="Main" Content="Top" Tag="Top"/>
+                <NavigationViewItem x:ConnectionId='13' x:Name="Score" Content="Score" Tag="Score"/>
+                <NavigationViewItem x:ConnectionId='14' x:Name="Data" Content="Data" Tag="Data"/>
+                
+                <NavigationViewItem x:ConnectionId='15' x:Name="Order" Content="Order" Tag="Order" Visibility="Collapsed"/>
+                <NavigationViewItem x:ConnectionId='16' x:Name="Opt" Content="Opt" Tag="Opt" Visibility="Collapsed"/>
+                <NavigationViewItem x:ConnectionId='17' x:Name="Team" Content="Team" Tag="Team" Visibility="Collapsed"/>
+                
+            </NavigationView.MenuItems>
+        </NavigationView>
+        <StackPanel Orientation="Horizontal" 
+                    Margin="100,20,100,50">
+            <StackPanel Orientation="Horizontal"
+                        Height="70" VerticalAlignment="Top">
+                <TextBlock Text="オーダー入力"/>
+                <Button x:ConnectionId='11' Content="ファイル読取" 
+                        Width="100" Height="50" 
+                                                            />
+            </StackPanel>
+            <StackPanel 
+                    Orientation="Vertical"
+                    BorderThickness="3"
+                    >
+                <TextBlock 
+                        Text="CSV取込みデータ"
+                        FontSize="20"
+                        />
+                <ListView x:ConnectionId='7' 
+                        x:Name="TeamOrderIdListView"
+                        Header="打順"
+                        SelectionMode="Single" 
+                        AllowFocusWhenDisabled="True"
+                        Height="380">
+                    <ListView.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="追加"
+                                               Width="100"
+                                               Foreground="DarkRed" Padding="30,0,0,0"/>
+                                <TextBlock Text="打順" 
+                                               Width="30"
+                                               Foreground="DarkRed" Padding="2,0,0,0"/>
+                                <TextBlock Text="名前" 
+                                               Width="100"
+                                               Foreground="DarkRed" 
+                                               HorizontalAlignment="Center" 
+                                               VerticalAlignment="Stretch" 
+                                               Padding="30,0,0,0"/>
+                                <TextBlock Text="守備位置" 
+                                               Width="70"
+                                               Foreground="DarkRed" 
+                                               HorizontalAlignment="Center"/>
+                                <TextBlock Text="打" 
+                                               Width="50"
+                                               Foreground="DarkRed" 
+                                               HorizontalAlignment="Center" Padding="15,0,0,0"
+                                               />
+                                <TextBlock Text="投" 
+                                               Width="50"
+                                               Foreground="DarkRed" 
+                                               HorizontalAlignment="Center" Padding="15,0,0,0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.HeaderTemplate>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <CheckBox x:ConnectionId='10' x:Name="CsvfileAddPlayer_chk"
+                                              Width="10" 
+                                              Canvas.ZIndex="-1" 
+                                              HorizontalAlignment="Left" 
+                                              MaxWidth="30" 
+                                                                               IsChecked="True"/>
+                                <TextBlock Text="{Binding order_id}"
+                                               Width="30"/>
+                                <TextBlock Text="{Binding name}"
+                                               Width="100"/>
+                                <TextBlock Text="{Binding position}"
+                                               Width="70"/>
+                                <TextBlock Text="{Binding bat}"
+                                               Width="50"/>
+                                <TextBlock Text="{Binding hand}"
+                                               Width="50"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock
+                    Text="登録済み選手データ"
+                    FontSize="20"
+                    />
+                <ListView x:ConnectionId='4'
+                    x:Name="TeamPlayerDataListView"
+                    Height="400">
+                    <ListView.HeaderTemplate>
+                        <DataTemplate>
+                            <StackPanel 
+                                Orientation="Horizontal">
+                                <TextBlock 
+                                    Text="打順" 
+                                    Width="30"
+                                    Foreground="DarkRed" 
+                                    Padding="2,0,0,0"
+                                    />
+                                <TextBlock 
+                                    Text="名前" 
+                                    Width="100"
+                                    Foreground="DarkRed" 
+                                    HorizontalAlignment="Center" 
+                                    VerticalAlignment="Stretch" 
+                                    Padding="30,0,0,0"
+                                    />
+                                <TextBlock 
+                                    Text="守備位置" 
+                                    Width="70"
+                                    Foreground="DarkRed" 
+                                    HorizontalAlignment="Center"/>
+                                <TextBlock 
+                                    Text="打" 
+                                    Width="50"
+                                    Foreground="DarkRed" 
+                                    HorizontalAlignment="Center" 
+                                    Padding="15,0,0,0"
+                                    />
+                                <TextBlock 
+                                    Text="投" 
+                                    Width="50"
+                                    Foreground="DarkRed" 
+                                    HorizontalAlignment="Center" 
+                                    Padding="15,0,0,0"
+                                    />
+                                <TextBlock 
+                                    Text="背番号" 
+                                    Width="50"
+                                    Foreground="DarkRed" 
+                                    HorizontalAlignment="Center" 
+                                    Padding="0,0,0,0"
+                                    />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.HeaderTemplate>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel 
+                                Orientation="Horizontal">
+                                <TextBlock 
+                                    Text="{Binding etc_str2}"
+                                    Width="30"
+                                    />
+                                <TextBlock 
+                                    Text="{Binding name}"
+                                    Width="100"/>
+                                <TextBlock 
+                                    Text="{Binding etc_str1}"
+                                    Width="70"
+                                    />
+                                <TextBlock 
+                                    Text="{Binding bat}"
+                                    Width="50"
+                                    />
+                                <TextBlock 
+                                    Text="{Binding hand}"
+                                    Width="50"
+                                    />
+                                <TextBlock 
+                                    Text="{Binding player_num}"
+                                    HorizontalAlignment="Right"
+                                    />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                    
+                </ListView>
+                
+            </StackPanel>
+
+            <StackPanel 
+                Orientation="Horizontal">
+                <Button x:ConnectionId='3' 
+                    x:Name="CsvSelectPlayerData_btn"
+                    Content="登録"
+                    Height="50"
+                    Width="100"
+                    FontSize="20" 
+                    Margin="10,10,10,10" 
+                                                           
+                    />
+            </StackPanel>
+
+
+        </StackPanel>
+
+    </Grid>
+</Page>
+

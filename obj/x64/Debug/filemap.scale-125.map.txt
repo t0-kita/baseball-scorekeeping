@@ -1,0 +1,7 @@
+﻿[ResourceMetadata]
+"ResourceId"			"filemap.scale-125"
+"ResourceDimensions"		"scale-125"
+
+[Files]
+"C:\Users\智基\source\repos\MMSS\MMSS\obj\x64\Debug\filemap.scale-125.pri"			"resources.pri"
+"C:\Users\智基\source\repos\MMSS\MMSS\obj\x64\Debug\PackageLayout\Assets\Square71x71Logo.scale-125.png"			"Assets\Square71x71Logo.scale-125.png"

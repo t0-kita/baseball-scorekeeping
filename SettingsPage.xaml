@@ -1,0 +1,203 @@
+﻿<Page
+    x:Class="MMSS.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MMSS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <NavigationView x:Name="Navigations" 
+                        PaneDisplayMode="LeftMinimal"
+                        IsPaneOpen="False"
+                        ItemInvoked="NavView_ItemInvoked" 
+                        Visibility="Visible"
+                        >
+            <NavigationView.MenuItems>
+                <NavigationViewItem x:Name="Main" Content="Top" Tag="Top"/>
+                <NavigationViewItem x:Name="Score" Content="Score" Tag="Score"/>
+                <NavigationViewItem x:Name="Data" Content="Data" Tag="Data"/>
+                
+                <NavigationViewItem x:Name="Order" Content="Order" Tag="Order" Visibility="Collapsed"/>
+                <NavigationViewItem x:Name="Opt" Content="Opt" Tag="Opt" Visibility="Collapsed"/>
+                <NavigationViewItem x:Name="Team" Content="Team" Tag="Team" Visibility="Collapsed"/>
+            </NavigationView.MenuItems>
+        </NavigationView>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Margin="20">
+                <TextBlock Text="選手データ" FontSize="20"/>
+                <StackPanel Margin="10">
+                    
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="20">
+                <TextBlock Text="球種" FontSize="20"/>
+                <StackPanel Margin="10" x:Name="BallTypeSTackPanel" Tapped="BallTypeAddButton_Tapped">
+                    <StackPanel  ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                        <ListView x:Name="BallTypeListView" 
+                                  Height="400"
+                                  CanDragItems="True" 
+                                  CanDrag="True" 
+                                  AllowDrop="True" 
+                                  CanReorderItems="True" 
+                                  Tapped="BallTypeListView_Tapped" 
+                                  ScrollViewer.VerticalScrollBarVisibility="Visible" 
+                                  ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBox x:Name="BallTypeOrder"
+                                             Header="順"
+                                                       Text="{Binding ball_order, Mode=TwoWay}" 
+                                                       Grid.Column="0"
+                                                       Style="{ThemeResource BaseTextBlockStyle}"
+                                                       Margin="12,6,0,0" FontSize="14"/>
+                                        <TextBox x:Name="BallTypeName"
+                                               Width="100"
+                                             Header="名前"
+                                                       Text="{Binding ball_type, Mode=TwoWay}" 
+                                                       Grid.Column="1"
+                                                       Grid.Row="0"
+                                                        
+                                                       Style="{ThemeResource BodyTextBlockStyle}"
+                                                       Margin="12,6,0,0" HorizontalAlignment="Right"
+                                                   />
+                                        <TextBox x:Name="BallTypeImg"
+                                             Header="Img"
+                                              Text="{Binding ball_img, Mode=TwoWay}"
+                                             GotFocus="BallTypeImg_GotFocus"
+                                                       Grid.Column="2"
+                                                       Margin="12,6,0,0"/>
+
+
+                                    </Grid>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="BallTypeAddButton"
+                        Content="球種追加"
+                        Click="BallTypeAddButton_Click" VerticalAlignment="Top" Padding="10,4,8,5" Margin="20,20,10,0"
+                        >
+                            <Button.Flyout>
+                                <Flyout>
+                                    <StackPanel>
+                                        <TextBlock Text="球種を記入してください"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="球種" Width="80"/>
+                                            <TextBox x:Name="NewBallTypeNameCreate" 
+                                             Width="120" 
+                                             TextChanged="NewBallTypeNameCreate_TextChanging"/>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="Img番号" 
+                                               Width="80"/>
+                                            <ComboBox 
+                                        x:Name="NewBallTypeImgCode"
+                                        SelectionChanged="NewBallTypeImgCode_SelectionChanged">
+                                                <ComboBox.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock  
+                                                    Text="{Binding ball_img}"
+                                                    />
+                                                    </DataTemplate>
+                                                </ComboBox.ItemTemplate>
+                                            </ComboBox>
+                                        </StackPanel>
+                                        <Button 
+                                    x:Name="NewBallTypeCreate_btn" 
+                                    Content="登録" 
+                                    IsEnabled="False" 
+                                    Click="NewBallTypeCreate_btn_Clicked"/>
+                                    </StackPanel>
+                                </Flyout>
+                            </Button.Flyout>
+                        </Button>
+
+                        <StackPanel Padding="10" HorizontalAlignment="Right">
+                            <TextBlock Text="Img番号"/>
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <StackPanel Margin="5">
+                                    <TextBlock Text="0"/>
+                                    <Grid x:Name="BallImgGrid_0" Margin="5"/>
+                                </StackPanel>
+                                <StackPanel Margin="5">
+                                    <TextBlock Text="1"/>
+                                    <Grid x:Name="BallImgGrid_1" Margin="5"/>
+                                </StackPanel>
+                                <StackPanel Margin="5">
+                                    <TextBlock Text="2"/>
+                                    <Grid x:Name="BallImgGrid_2" Margin="5"/>
+                                </StackPanel>
+
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <StackPanel Margin="5">
+                                    <TextBlock Text="3"/>
+                                    <Grid x:Name="BallImgGrid_3" Margin="5"/>
+                                </StackPanel>
+                                <StackPanel Margin="5">
+                                    <TextBlock Text="4"/>
+                                    <Grid x:Name="BallImgGrid_4" Margin="5"/>
+                                </StackPanel>
+                                <StackPanel Margin="5">
+                                    <TextBlock Text="5"/>
+                                    <Grid x:Name="BallImgGrid_5" Margin="5"/>
+                                </StackPanel>
+
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <StackPanel Margin="5">
+                                    <TextBlock Text="6"/>
+                                    <Grid x:Name="BallImgGrid_6" Margin="5"/>
+                                </StackPanel>
+                                <StackPanel Margin="5">
+                                    <TextBlock Text="7"/>
+                                    <Grid x:Name="BallImgGrid_7" Margin="5"/>
+                                </StackPanel>
+                                <StackPanel Margin="5">
+                                    <TextBlock Text="8"/>
+                                    <Grid x:Name="BallImgGrid_8" Margin="5"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+                        
+                    </StackPanel>
+
+
+                </StackPanel>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Language"/>
+                <ComboBox
+                        x:Name="LanguageComboBox"
+                        PlaceholderText="Language"
+                        SelectionChanged="LanguageComboBox_SelectionChanged"
+                        Margin="10">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock
+                                Text="{Binding name}"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Page>

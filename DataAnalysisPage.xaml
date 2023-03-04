@@ -1,0 +1,1106 @@
+﻿<Page
+    x:Class="MMSS.DataAnalysisPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MMSS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <NavigationView x:Name="Navigations" 
+                        PaneDisplayMode="LeftMinimal"
+                        IsPaneOpen="False"
+                        ItemInvoked="NavView_ItemInvoked" 
+                        Visibility="Visible"
+                        >
+            <NavigationView.MenuItems>
+                <NavigationViewItem x:Name="Main" Content="Top" Tag="Top"/>
+                <NavigationViewItem x:Name="Score" Content="Score" Tag="Score"/>
+                
+                <NavigationViewItem x:Name="Data" Content="Data" Tag="Data" Visibility="Collapsed"/>
+                <NavigationViewItem x:Name="Order" Content="Order" Tag="Order" Visibility="Collapsed"/>
+                <NavigationViewItem x:Name="Opt" Content="Opt" Tag="Opt" Visibility="Collapsed"/>
+                <NavigationViewItem x:Name="Team" Content="Team" Tag="Team" Visibility="Collapsed"/>
+            </NavigationView.MenuItems>
+        </NavigationView>
+
+        <StackPanel Orientation="Horizontal">
+
+            <StackPanel Orientation="Vertical">
+                <Grid x:Name="ZoneGrid" 
+                      Margin="100,10,0,0" 
+                      Height="481" 
+                      VerticalAlignment="Top" 
+                      HorizontalAlignment="Left" 
+                      Width="335">
+
+                    <Image 
+                        x:Name="ZoneImage" 
+                        Source="/Assets/zone.png" 
+                        RenderTransformOrigin="0.0,0.0" 
+                        Tapped="Zone_Image_Tapped" 
+                        Margin="0,0,0,0">
+                    </Image>
+                </Grid>
+                <Grid Margin="100,10,0,0" >
+                    <StackPanel>
+                        <ToggleSwitch x:Name="AnalysFlg_ToggleSwitch" IsOn="True" OffContent="BATTER" OnContent="PITCHER" Toggled="AnalysFlg_ToggleSwitch_Toggled"/>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel>
+                                <TextBlock Text="チーム名"/>
+                                <Border
+                        BorderBrush="#213a70" 
+                        BorderThickness="1">
+                                    <ListView x:Name="TeamName" 
+                          Height="100" 
+                          AllowDrop="True"
+                          CanReorderItems="True"
+                          Margin="10,0,10,0" 
+                          Tapped="TeamNameListView_Item_Tapped" SelectionChanged="TeamName_SelectionChanged">
+                                        <ListView.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="*"/>
+                                                        <RowDefinition Height="*"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="Auto"/>
+                                                        <ColumnDefinition Width="*"/>
+                                                    </Grid.ColumnDefinitions>
+
+                                                    <TextBlock Text="{Binding teamName}" 
+                                           Grid.Column="1"
+                                           Style="{ThemeResource BaseTextBlockStyle}"
+                                           Margin="0,0,0,0"/>
+                                                </Grid>
+                                            </DataTemplate>
+                                        </ListView.ItemTemplate>
+                                    </ListView>
+                                </Border>
+                            </StackPanel>
+                            <StackPanel>
+                                <TextBlock Text="選手名"/>
+                                <Border
+                        BorderBrush="#213a70" 
+                        BorderThickness="1">
+                                    <ListView x:Name="PlayerName" 
+                          Height="100" 
+                          AllowDrop="True"
+                          CanReorderItems="True"
+                          Margin="10,0,10,0" 
+                          Tapped="PlayerNameListView_Item_Tapped" SelectionChanged="PlayerName_SelectionChanged">
+                                        <ListView.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="*"/>
+                                                        <RowDefinition Height="*"/>
+                                                    </Grid.RowDefinitions>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="Auto"/>
+                                                        <ColumnDefinition Width="*"/>
+                                                    </Grid.ColumnDefinitions>
+
+                                                    <TextBlock Text="{Binding name}" 
+                                           Grid.Column="1"
+                                           Style="{ThemeResource BaseTextBlockStyle}"
+                                           Margin="0,0,0,0"/>
+                                                </Grid>
+                                            </DataTemplate>
+                                        </ListView.ItemTemplate>
+                                    </ListView>
+                                </Border>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+
+                </Grid>
+            </StackPanel>
+            <StackPanel 
+                Orientation="Vertical"
+                VerticalAlignment="Top" 
+                
+                >
+                
+                
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ToggleSwitch 
+                            x:Name="DateTimeToggle" 
+                            Header="対象期間"
+                            IsOn="False"
+                            Toggled="DateTimeSelect_toggleSwitch"/>
+                        <CheckBox 
+                            x:Name="DateTimeHideCheckBox" 
+                            VerticalAlignment="Bottom" 
+                            HorizontalAlignment="Right" 
+                            Content="hide" 
+                            Height="32" 
+                            MinWidth="40" 
+                            HorizontalContentAlignment="Right" 
+                            MaxWidth="70" 
+                            MaxHeight="40" 
+                            FlowDirection="LeftToRight" 
+                            Checked="HideCheckBox_Checked" 
+                            Unchecked="HideCheckBox_UnChecked" 
+                            IsEnabled="False" />
+                    </StackPanel>
+                    <StackPanel 
+                        x:Name="DateTimeSelect_StackPanel" 
+                        Visibility="Collapsed"
+                        Orientation="Horizontal">
+                        <CalendarDatePicker
+                            Header="start"
+                            x:Name="StartDateTimePicker"
+                            PlaceholderText="Pick a date" 
+                            DateChanged="DateTimePicker_DateChanged"/>
+                        <TextBlock 
+                            Text="to"
+                            Margin="5,0,5,0" 
+                            VerticalAlignment="Bottom"/>
+                        <CalendarDatePicker
+                            Header="end"
+                            x:Name="EndDateTimePicker"
+                            PlaceholderText="Pick a date" 
+                            DateChanged="DateTimePicker_DateChanged"/>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ToggleSwitch 
+                            x:Name="BatToggle" 
+                            Header="打席別"
+                            IsOn="False"
+                            Toggled="BatSelect_toggleSwitch"/>
+                        <CheckBox 
+                            x:Name="BatHideCheckBox" 
+                            VerticalAlignment="Bottom" 
+                            HorizontalAlignment="Right" 
+                            Content="hide" 
+                            Height="32" 
+                            MinWidth="40" 
+                            HorizontalContentAlignment="Right" 
+                            MaxWidth="70" 
+                            MaxHeight="40" 
+                            FlowDirection="LeftToRight" 
+                            Checked="HideCheckBox_Checked" 
+                            Unchecked="HideCheckBox_UnChecked" 
+                            IsEnabled="False"/>
+                    </StackPanel>
+                    <StackPanel 
+                        x:Name="BatSelect_StackPanel" 
+                        Visibility="Collapsed">
+                        <ToggleSwitch 
+                                x:Name="BatLeftRightToggle" 
+                                IsOn="False"
+                                OffContent="右"
+                                OnContent="左"
+                                Margin="10,0,0,0"
+                                Toggled="BatLeftRight_toggleSwitch"/>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ToggleSwitch 
+                            x:Name="IningToggle" 
+                            Header="イニング別"
+                            IsOn="False"
+                            Toggled="IningSelect_toggleSwitch"/>
+                        <CheckBox 
+                            x:Name="IningHideCheckBox" 
+                            VerticalAlignment="Bottom" 
+                            HorizontalAlignment="Right" 
+                            Content="hide" 
+                            Height="32" 
+                            MinWidth="40" 
+                            HorizontalContentAlignment="Right" 
+                            MaxWidth="70" 
+                            MaxHeight="40" 
+                            FlowDirection="LeftToRight" 
+                            Checked="HideCheckBox_Checked" 
+                            Unchecked="HideCheckBox_UnChecked" 
+                            IsEnabled="False"/>
+                    </StackPanel>
+                    <StackPanel 
+                        x:Name="IningSelect_StackPanel" 
+                        Width="100"
+                        Visibility="Collapsed">
+                        <Border
+                        BorderBrush="#213a70" 
+                        BorderThickness="1">
+                            <ListView 
+                                x:Name="IningSelect"     
+                                Height="35"
+                          AllowDrop="True"
+                          CanReorderItems="True"
+                          Margin="10,0,10,0" 
+                          Tapped="IningSelectListView_Item_Tapped" 
+                                SelectionChanged="IningSelect_SelectionChanged" 
+                                HorizontalAlignment="Left" 
+                                VerticalAlignment="Top">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <TextBlock 
+                                                Text="{Binding inings}" 
+                                                Width="50"
+                                                Style="{ThemeResource BaseTextBlockStyle}" HorizontalAlignment="Left"
+                                                />
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel x:Name="Counts"
+                                Orientation="Vertical" 
+                                >
+
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal">
+                            <ToggleSwitch 
+                            x:Name="CountToggle" 
+                            Header="カウント別"
+                            IsOn="False"
+                            Toggled="CountSelect_toggleSwitch"/>
+                            <CheckBox 
+                            x:Name="CountHideCheckBox" 
+                            VerticalAlignment="Bottom" 
+                            HorizontalAlignment="Right" 
+                            Content="hide" 
+                            Height="32" 
+                            MinWidth="40" 
+                            HorizontalContentAlignment="Right" 
+                            MaxWidth="70" 
+                            MaxHeight="40" 
+                            FlowDirection="LeftToRight" 
+                            Checked="HideCheckBox_Checked" 
+                            Unchecked="HideCheckBox_UnChecked" 
+                            IsEnabled="False"/>
+                        </StackPanel>
+
+                    </StackPanel>
+                    <StackPanel 
+                        Orientation="Horizontal"
+                        x:Name="CountSelect_StackPanel"       
+                        Visibility="Collapsed">
+                        <StackPanel>
+                            <StackPanel x:Name="ballCount" Orientation="Horizontal">
+
+                                <TextBlock Text="B" Margin="10,0,12,0"/>
+                                <Button
+                                    x:Name="oneBall_btn"
+                                    Background="Transparent" 
+                                    Click="Count_Click" 
+                                    HorizontalAlignment="Stretch" Padding="0,0,0,0">
+                                    <Ellipse 
+                                        x:Name="oneBall" 
+                                        Stroke="Black" 
+                                        Height="20" Width="20"
+                                        Tapped="Count_Tapped"/>
+                                </Button>
+                                <Button
+                                    x:Name="twoBall_btn"
+                                    Background="Transparent" 
+                                    Click="Count_Click" 
+                                    HorizontalAlignment="Stretch" Padding="0,0,0,0">
+                                    <Ellipse x:Name="twoBall" Height="20" Width="20" Stroke="Black" Tapped="Count_Tapped"/>
+                                </Button>
+                                <Button
+                                    x:Name="threeBall_btn"
+                                    Background="Transparent" 
+                                    Click="Count_Click" 
+                                    HorizontalAlignment="Stretch" Padding="0,0,0,0">
+                                    <Ellipse x:Name="threeBall" Height="20" Width="20" Stroke="Black" Tapped="Count_Tapped" />
+                                </Button>
+                                <Button
+                                    x:Name="fourBall_btn"
+                                    Background="Transparent" 
+                                    Click="Count_Click" 
+                                    HorizontalAlignment="Stretch" Padding="0,0,0,0" Visibility="Collapsed">
+                                    <Ellipse x:Name="fourBall" Height="20" Width="20" Stroke="Black" Tapped="Count_Tapped" Visibility="Collapsed" />
+                                </Button>
+
+                            </StackPanel>
+                            <StackPanel x:Name="strikeCount" Orientation="Horizontal">
+                                <TextBlock Text="S" Margin="10,0,13,0"/>
+                                <Button
+                                    x:Name="oneStrike_btn"
+                                    Background="Transparent" 
+                                    Click="Count_Click" 
+                                    HorizontalAlignment="Stretch" Padding="0,0,0,0">
+                                    <Ellipse x:Name="oneStrike" Height="20" Width="20" Stroke="Black" Tapped="Count_Tapped"/>
+                                </Button>
+                                <Button
+                                    x:Name="twoStrike_btn"
+                                    Background="Transparent" 
+                                    Click="Count_Click" 
+                                    HorizontalAlignment="Stretch" Padding="0,0,0,0">
+                                    <Ellipse x:Name="twoStrike" Height="20" Width="20" Stroke="Black" Tapped="Count_Tapped"/>
+                                </Button>
+                                <Button
+                                    x:Name="threeStrike_btn"
+                                    Background="Transparent" 
+                                    Click="Count_Click" 
+                                    HorizontalAlignment="Stretch" Padding="0,0,0,0" Visibility="Collapsed">
+                                    <Ellipse x:Name="threeStrike" Height="20" Width="20" Stroke="Black" Tapped="Count_Tapped" Visibility="Collapsed"/>
+                                </Button>
+                            </StackPanel>
+                            <StackPanel x:Name="outCount"  Orientation="Horizontal">
+
+                                <TextBlock Text="O" Margin="10,0,10,0"/>
+                                <Button
+                                    x:Name="oneOut_btn"
+                                    Background="Transparent" 
+                                    Click="Count_Click" 
+                                    HorizontalAlignment="Stretch" Padding="0,0,0,0">
+                                    <Ellipse x:Name="oneOut" Height="20" Width="20" Stroke="Black" Tapped="Count_Tapped"/>
+                                </Button>
+                                <Button
+                                    x:Name="twoOut_btn"
+                                    Background="Transparent" 
+                                    Click="Count_Click" 
+                                    HorizontalAlignment="Stretch" Padding="0,0,0,0">
+                                    <Ellipse x:Name="twoOut" Height="20" Width="20" Stroke="Black" Tapped="Count_Tapped"/>
+                                </Button>
+                                <Button
+                                    x:Name="threeOut_btn"
+                                    Background="Transparent" 
+                                    Click="Count_Click" 
+                                    HorizontalAlignment="Stretch" Padding="0,0,0,0" Visibility="Collapsed">
+                                    <Ellipse x:Name="threeOut" Height="20" Width="20" Stroke="Black" Tapped="Count_Tapped" Visibility="Collapsed"/>
+                                </Button>
+
+                            </StackPanel>
+
+                        </StackPanel>
+                        <StackPanel VerticalAlignment="Bottom" 
+                                    HorizontalAlignment="Right" 
+                                    Width="120">
+                            <CheckBox 
+                                x:Name="OutCountOnOff_CheckBox" 
+                                Content="アウト" 
+                                Height="32" 
+                                IsChecked="True" 
+                                HorizontalAlignment="Right" 
+                                FontSize="12" Width="40" MinWidth="60" Unchecked="OutCountOnOff_CheckBox_Unchecked" Checked="OutCountOnOff_CheckBox_Checked"
+                                />
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ToggleSwitch 
+                            x:Name="RunnerToggle" 
+                            Header="ランナー別"
+                            IsOn="False"
+                            Toggled="RunnerSelect_toggleSwitch" Width="90"/>
+                        <CheckBox 
+                        x:Name="RunnerCheckBox"
+                        Content="ランナー有"
+                        IsChecked="False" 
+                        Checked="CountCheckBox_Checked" 
+                        VerticalAlignment="Bottom" HorizontalAlignment="Right" Unchecked="CountCheckBox_UnChecked" Width="60" MinWidth="80" FontSize="12"/>
+                        <CheckBox 
+                            x:Name="RunnerHideCheckBox" 
+                            VerticalAlignment="Bottom" 
+                            HorizontalAlignment="Right" 
+                            Content="hide" 
+                            Height="32" 
+                            MinWidth="40" 
+                            HorizontalContentAlignment="Right" 
+                            MaxWidth="60" 
+                            MaxHeight="40" 
+                            FlowDirection="LeftToRight" 
+                            Checked="HideCheckBox_Checked" 
+                            Unchecked="HideCheckBox_UnChecked" 
+                            IsEnabled="False"
+                            FontSize="11"
+                            />
+
+                    </StackPanel>
+                    <StackPanel x:Name="RunnerSelect_StackPanel" 
+                                Visibility="Collapsed">
+                        <CheckBox 
+                            x:Name="run_1" 
+                            Content="一塁" 
+                            Click="Runner_Item_Clicked" 
+                            Unchecked="Runner_Unchecked"
+                            Margin="10,0,0,0"
+                         />
+                        <CheckBox 
+                            x:Name="run_2" 
+                            Content="二塁" 
+                            Click="Runner_Item_Clicked" 
+                            Unchecked="Runner_Unchecked"
+                            Margin="10,0,0,0"
+                            />
+                        <CheckBox 
+                    x:Name="run_3" 
+                    Content="三塁" 
+                    Click="Runner_Item_Clicked" 
+                    Unchecked="Runner_Unchecked"
+                    Margin="10,0,0,0"
+                    />
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ToggleSwitch 
+                            x:Name="BallTypeToggle" 
+                            Header="球種別"
+                            IsOn="False"
+                            Toggled="BallTypeSelect_toggleSwitch"/>
+                        <CheckBox 
+                            x:Name="BallTypeHideCheckBox" 
+                            VerticalAlignment="Bottom" 
+                            HorizontalAlignment="Right" 
+                            Content="hide" 
+                            Height="32" 
+                            MinWidth="40" 
+                            HorizontalContentAlignment="Right" 
+                            MaxWidth="70" 
+                            MaxHeight="40" 
+                            FlowDirection="LeftToRight" 
+                            Checked="HideCheckBox_Checked" 
+                            Unchecked="HideCheckBox_UnChecked" 
+                            IsEnabled="False"/>
+                    </StackPanel>
+                    <StackPanel 
+                        x:Name="BallTypeSelect_StackPanel" 
+                        Visibility="Collapsed">
+                        <Border
+                            BorderBrush="#213a70" 
+                            BorderThickness="1">
+                            <ListView 
+                                x:Name="BallTypeSelect" 
+                                Height="30" 
+                                AllowDrop="True"
+                                CanReorderItems="True"
+                                Margin="10,0,10,0" 
+                                Tapped="BallTypeSelectListView_Item_Tapped" 
+                                SelectionChanged="BallTypeSelect_Selection">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <TextBlock Text="{Binding ball_type}" 
+                                                Grid.Column="0"
+                                                Style="{ThemeResource BaseTextBlockStyle}"
+                                               />
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ToggleSwitch 
+                            x:Name="BallSpeedToggle" 
+                            Header="球速別"
+                            IsOn="False"
+                            Toggled="BallSpeedSelect_toggleSwitch"/>
+                        <CheckBox 
+                            x:Name="BallSpeedHideCheckBox" 
+                            VerticalAlignment="Bottom" 
+                            HorizontalAlignment="Right" 
+                            Content="hide" 
+                            Height="32" 
+                            MinWidth="40" 
+                            HorizontalContentAlignment="Right" 
+                            MaxWidth="70" 
+                            MaxHeight="40" 
+                            FlowDirection="LeftToRight" 
+                            Checked="HideCheckBox_Checked" 
+                            Unchecked="HideCheckBox_UnChecked" 
+                            IsEnabled="False"/>
+                    </StackPanel>
+                    <StackPanel x:Name="BallSpeedSelect_StackPanel" 
+                                Visibility="Collapsed">
+                        <Border
+                        BorderBrush="#213a70" 
+                        BorderThickness="1">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBox
+                                    x:Name="BallSpeedMIN_TextBox"
+                                    Header="MIN"
+                                    Text="{Binding ball_speed_min}" 
+                                    Margin="5" 
+                                    TextChanged="BallSpeed_TextChanged"
+                                    />
+                                <TextBox
+                                    x:Name="BallSpeedMAX_TextBox"
+                                    Header="MAX"
+                                    Margin="5"
+                                    Text="{Binding ball_speed_max}" 
+                                    TextChanged="BallSpeed_TextChanged"
+                                    />
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ToggleSwitch 
+                            x:Name="CourseToggle" 
+                            Header="コース別"
+                            IsOn="False"
+                            Toggled="CourseSelect_toggleSwitch"/>
+                        <CheckBox 
+                            x:Name="CourseHideCheckBox" 
+                            VerticalAlignment="Bottom" 
+                            HorizontalAlignment="Right" 
+                            Content="hide" 
+                            Height="32" 
+                            MinWidth="40" 
+                            HorizontalContentAlignment="Right" 
+                            MaxWidth="70" 
+                            MaxHeight="40" 
+                            FlowDirection="LeftToRight" 
+                            Checked="HideCheckBox_Checked" 
+                            Unchecked="HideCheckBox_UnChecked" 
+                            IsEnabled="False"/>
+                    </StackPanel>
+                    <StackPanel 
+                        x:Name="CourseSelect_StackPanel" 
+                        Background="#7F7F7F"
+                        Visibility="Collapsed" 
+                        Width="140" 
+                        HorizontalAlignment="Left" 
+                        Height="110" Margin="5,5,5,5" Padding="5,5,5,5" Opacity="0.7">
+                        <!--
+                        <Border
+                            BorderBrush="#213a70" 
+                            BorderThickness="1">
+                            <ListView 
+                                x:Name="CourseSelect" 
+                                Height="30" 
+                                AllowDrop="True"
+                                CanReorderItems="True"
+                                Margin="10,0,10,0" 
+                                Tapped="CourseSelectListView_Item_Tapped" 
+                                SelectionChanged="CourseSelect_Selection">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+
+                                            <TextBlock Text="{Binding course}" 
+                                                Grid.Column="0"
+                                                Style="{ThemeResource BaseTextBlockStyle}"
+                                               />
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Border>
+                        -->
+                        <StackPanel Background="#4472C4" Width="126" Opacity="1.0">
+                            <StackPanel Orientation="Horizontal">
+                                <Border BorderBrush="#D9D9D9" 
+                                            BorderThickness="1">
+                                    <CheckBox x:Name="Course_A_CheckBox" Unchecked="Course_CheckBox_Unchecked" Checked="Course_CheckBox_Checked" MinWidth="21" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Padding="10,5,0,0" Margin="10,0,0,0"/>
+                                </Border>
+                                <Border BorderBrush="#D9D9D9" 
+                                            BorderThickness="1">
+                                    <CheckBox x:Name="Course_B_CheckBox" Unchecked="Course_CheckBox_Unchecked" Checked="Course_CheckBox_Checked"  MinWidth="21" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Padding="10,5,0,0" Margin="10,0,0,0"/>
+                                </Border>
+                                <Border BorderBrush="#D9D9D9" 
+                                            BorderThickness="1">
+                                        <CheckBox x:Name="Course_C_CheckBox" Unchecked="Course_CheckBox_Unchecked" Checked="Course_CheckBox_Checked"  MinWidth="21" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Padding="10,5,0,0" Margin="10,0,0,0"/>
+                                </Border>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Border BorderBrush="#D9D9D9" 
+                                            BorderThickness="1">
+                                    <CheckBox x:Name="Course_D_CheckBox" Unchecked="Course_CheckBox_Unchecked" Checked="Course_CheckBox_Checked" MinWidth="21" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Padding="10,5,0,0" Margin="10,0,0,0"/>
+                                </Border>
+                                <Border BorderBrush="#D9D9D9" 
+                                            BorderThickness="1">
+                                    <CheckBox x:Name="Course_E_CheckBox" Unchecked="Course_CheckBox_Unchecked" Checked="Course_CheckBox_Checked" MinWidth="21" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Padding="10,5,0,0" Margin="10,0,0,0"/>
+                                </Border>
+                                <Border BorderBrush="#D9D9D9" 
+                                            BorderThickness="1">
+                                    <CheckBox x:Name="Course_F_CheckBox" Unchecked="Course_CheckBox_Unchecked" Checked="Course_CheckBox_Checked" MinWidth="21" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Padding="10,5,0,0" Margin="10,0,0,0"/>
+                                </Border>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Border BorderBrush="#D9D9D9" 
+                                            BorderThickness="1">
+                                    <CheckBox x:Name="Course_G_CheckBox" Unchecked="Course_CheckBox_Unchecked" Checked="Course_CheckBox_Checked" MinWidth="21" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Padding="10,5,0,0" Margin="10,0,0,0"/>
+                                </Border>
+                                <Border BorderBrush="#D9D9D9" 
+                                            BorderThickness="1">
+                                    <CheckBox x:Name="Course_H_CheckBox" Unchecked="Course_CheckBox_Unchecked" Checked="Course_CheckBox_Checked" MinWidth="21" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Padding="10,5,0,0" Margin="10,0,0,0"/>
+                                </Border>
+                                <Border BorderBrush="#D9D9D9" 
+                                            BorderThickness="1">
+                                    <CheckBox x:Name="Course_I_CheckBox" Unchecked="Course_CheckBox_Unchecked" Checked="Course_CheckBox_Checked" MinWidth="21" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Padding="10,5,0,0" Margin="10,0,0,0"/>
+                                </Border>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ToggleSwitch 
+                            x:Name="HitTypeToggle" 
+                            Header="打球タイプ別"
+                            IsOn="False"
+                            Toggled="HitTypeSelect_toggleSwitch" Width="90"/>
+                        
+                        <CheckBox 
+                            x:Name="HitTypeHideCheckBox" 
+                            VerticalAlignment="Bottom" 
+                            HorizontalAlignment="Right" 
+                            Content="hide" 
+                            Height="32" 
+                            MinWidth="40" 
+                            HorizontalContentAlignment="Right" 
+                            MaxWidth="60" 
+                            MaxHeight="40" 
+                            FlowDirection="LeftToRight" 
+                            Checked="HideCheckBox_Checked" 
+                            Unchecked="HideCheckBox_UnChecked" 
+                            IsEnabled="False"
+                            FontSize="11"
+                            />
+
+                    </StackPanel>
+                    <StackPanel x:Name="HitTypeSelect_StackPanel" 
+                                Visibility="Collapsed">
+
+                        <ComboBox
+                        x:Name="HitTypeComboBox"
+                        PlaceholderText="打球タイプ"
+                        SelectionChanged="HitTypeComboBox_SelectionChanged"
+                        Margin="10">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock
+                                Text="{Binding hit_type}"/>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ToggleSwitch 
+                            x:Name="DirToggle" 
+                            Header="打球方向別"
+                            IsOn="False"
+                            Toggled="DirSelect_toggleSwitch" Width="90"/>
+
+                        <CheckBox 
+                            x:Name="DirHideCheckBox" 
+                            VerticalAlignment="Bottom" 
+                            HorizontalAlignment="Right" 
+                            Content="hide" 
+                            Height="32" 
+                            MinWidth="40" 
+                            HorizontalContentAlignment="Right" 
+                            MaxWidth="60" 
+                            MaxHeight="40" 
+                            FlowDirection="LeftToRight" 
+                            Checked="HideCheckBox_Checked" 
+                            Unchecked="HideCheckBox_UnChecked" 
+                            IsEnabled="False"
+                            FontSize="11"
+                            />
+
+                    </StackPanel>
+                    <StackPanel
+                        Orientation="Horizontal"
+                        x:Name="DirSelect_StackPanel"
+                        Background="SandyBrown"
+                                Visibility="Collapsed">
+                        <CheckBox 
+                            x:Name="LetfDir" 
+                            Content="L" 
+                            Click="Dir_Item_Clicked" 
+                            Unchecked="Dir_Unchecked"
+                            Margin="10,0,0,0" MinWidth="60"
+                            />
+                        <Line
+                            X1="0" Y1="0"
+                            X2="15" Y2="50"
+                            Stroke="Maroon"/>
+                        <CheckBox 
+                            x:Name="CenterDir" 
+                            Content="C" 
+                            Click="Dir_Item_Clicked" 
+                            Unchecked="Dir_Unchecked"
+                            Margin="0,0,0,0" MinWidth="60"
+                            />
+                        <Line
+                            X1="15" Y1="0"
+                            X2="0" Y2="50"
+                            Stroke="Maroon"/>
+                        <CheckBox 
+                            x:Name="RightDir" 
+                            Content="R" 
+                            Click="Dir_Item_Clicked" 
+                            Unchecked="Dir_Unchecked"
+                            Margin="0,0,0,0" MinWidth="60"
+                            />
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <ToggleSwitch 
+                            x:Name="HitReultToggle" 
+                            Header="打球結果別"
+                            IsOn="False"
+                            Toggled="HitReult_toggleSwitch" Width="90"/>
+
+                        <CheckBox 
+                            x:Name="HitResultHideCheckBox" 
+                            VerticalAlignment="Bottom" 
+                            HorizontalAlignment="Right" 
+                            Content="hide" 
+                            Height="32" 
+                            MinWidth="40" 
+                            HorizontalContentAlignment="Right" 
+                            MaxWidth="60" 
+                            MaxHeight="40" 
+                            FlowDirection="LeftToRight" 
+                            Checked="HideCheckBox_Checked" 
+                            Unchecked="HideCheckBox_UnChecked" 
+                            IsEnabled="False"
+                            FontSize="11"
+                            />
+
+                    </StackPanel>
+                    <StackPanel
+                        Orientation="Horizontal"
+                        x:Name="HitResultSelect_StackPanel"
+                                Visibility="Collapsed">
+                        <StackPanel>
+                        <CheckBox 
+                            x:Name="HitResultOut" 
+                            Content="Out" 
+                            Click="HitResultItemClicked" 
+                            Unchecked="HitResultItemUnchecked"
+                            Margin="10,0,0,0" MinWidth="60"
+                            />
+                        <CheckBox 
+                            x:Name="HitResultHit" 
+                            Content="Hit" 
+                            Click="HitResultItemClicked" 
+                            Unchecked="HitResultItemUnchecked"
+                            Margin="10,0,0,0" MinWidth="60"
+                            />
+                        </StackPanel>
+                        <StackPanel>
+                            <CheckBox 
+                            x:Name="HitResultError" 
+                            Content="Error" 
+                            Click="HitResultItemClicked" 
+                            Unchecked="HitResultItemUnchecked"
+                            Margin="0,0,0,0" MinWidth="60"
+                            />
+                            <CheckBox 
+                            x:Name="HitResultOther" 
+                            Content="Other" 
+                            Click="HitResultItemClicked" 
+                            Unchecked="HitResultItemUnchecked"
+                            Margin="0,0,0,0" MinWidth="60"
+                            />
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+            </StackPanel>
+
+
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock 
+                        Text="-選手名-"
+                        x:Name="PlayerDataName_TextBlock"
+                        FontSize="20"
+                        Margin="10,5,10,5"
+                        Width="100"
+                        />
+                    <TextBox 
+                        Header="コメント"
+                        Margin="10,5,10,5"
+                        Width="300"
+                        Height="80"
+                        x:Name="PlayerDataComment_TextBox"
+                        />
+                    <Button 
+                        Margin="5"
+                        x:Name="PlayerDataCmntFix_Button" 
+                        Click="PlayerDataCmntFix_Button_Click"
+                        Content="記入" VerticalAlignment="Bottom"
+                        Height="40"
+                        Width="50"
+                        />
+                </StackPanel>
+                <StackPanel>
+                    <StackPanel 
+                        Orientation="Horizontal"
+                        Margin="10,0,10,0">
+                        <StackPanel 
+                            Margin="10,5,5,5">
+                            <TextBlock
+                                Text="全投球数"/>
+                            <TextBlock
+                                Text="0"
+                                x:Name="TotalBallCount_TextBlock"
+                                Margin="5,5,5,5"/>
+                        </StackPanel>
+                        <StackPanel 
+                            Margin="5,5,5,5">
+                            <TextBlock
+                                Text="投球数"/>
+                            <TextBlock
+                                Text="0"
+                                x:Name="SelectBallCount_TextBlock"
+                                Margin="5"/>
+                        </StackPanel>
+                        <StackPanel 
+                            Orientation="Horizontal"
+                            Margin="0,5,5,5" 
+                            VerticalAlignment="Bottom">
+                            <TextBlock
+                                Text="0.00"
+                                x:Name="SelectBallPercent_TextBlock"
+                                Margin="0,10,0,10"/>
+                            <TextBlock
+                                Text="%"
+                                Margin="0,10,0,10"
+                                />
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel 
+                        Orientation="Horizontal"
+                        Margin="10,0,10,5">
+                        <StackPanel
+                        Margin="10,5,10,5">
+                            <TextBlock 
+                            Text="Avg"
+                            />
+                            <TextBlock 
+                        x:Name="BallSpeedAverage_TextBlock"
+                        Margin="12,6,0,0"/>
+                        </StackPanel>
+                        <StackPanel
+                        Margin="10,5,10,5">
+                            <TextBlock 
+                            Text="Min"/>
+                            <TextBlock 
+                            x:Name="BallSpeedMin_TextBlock"
+                            Margin="12,6,0,0"/>
+                        </StackPanel>
+                        <StackPanel
+                        Margin="10,5,10,5">
+                            <TextBlock 
+                            Text="Max"/>
+                            <TextBlock 
+                            x:Name="BallSpeedMax_TextBlock"
+                            Margin="12,6,0,0"/>
+                        </StackPanel>
+                        <TextBlock 
+                            Text="※球速:0km/hは除く" 
+                        VerticalAlignment="Bottom" FontSize="8"/>
+                    </StackPanel>
+                    <StackPanel 
+                        Orientation="Horizontal">
+                        <Border 
+                                BorderBrush="Green"
+                                BorderThickness="1">
+                            <Button x:Name="BallAction_b_Count_Button"
+                                    Background="Transparent" Click="BallAction_Count_Button_Click">
+                                <StackPanel 
+                            Orientation="Horizontal">
+
+                                    <StackPanel 
+                                Margin="5">
+                                        <TextBlock Text="ボール"/>
+                                        <TextBlock Text="0" x:Name="BallAction_b_Count_TextBlock" Margin="5,5,10,0"/>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5,5,5" VerticalAlignment="Bottom">
+                                            <TextBlock Text="0" Margin="10,0,0,0" x:Name="BallAction_b_Percent_TextBlock"/>
+                                            <TextBlock Text="%" Margin="0,0,0,0"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </StackPanel>
+                            </Button>
+                        </Border>
+                        <Border BorderBrush="Orange" BorderThickness="1">
+                            <Button x:Name="BallAction_s_Count_Button" Background="Transparent" Click="BallAction_Count_Button_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <StackPanel Margin="5">
+                                        <TextBlock Text="見逃し"/>
+                                        <TextBlock Text="0" x:Name="BallAction_s_Count_TextBlock" Margin="5,5,10,0"/>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5,5,5" VerticalAlignment="Bottom">
+                                            <TextBlock Text="0" Margin="10,0,0,0" x:Name="BallAction_s_Percent_TextBlock"/>
+                                            <TextBlock Text="%" Margin="0,0,0,0"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                    
+                                </StackPanel>
+                            </Button>
+                        </Border>
+                        <Border BorderBrush="DarkOrange" BorderThickness="1">
+                            <Button x:Name="BallAction_sw_Count_Button" Background="Transparent" Click="BallAction_Count_Button_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <StackPanel Margin="5">
+                                        <TextBlock Text="空振り"/>
+                                        <TextBlock Text="0" x:Name="BallAction_sw_Count_TextBlock" Margin="5,5,10,0"/>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5,5,5" VerticalAlignment="Bottom">
+                                            <TextBlock Text="0" Margin="10,0,0,0" x:Name="BallAction_sw_Percent_TextBlock"/>
+                                            <TextBlock Text="%" Margin="0,0,0,0"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                    
+                                </StackPanel>
+                            </Button>
+                        </Border>
+                        <Border BorderBrush="Yellow" BorderThickness="1">
+                            <Button x:Name="BallAction_f_Count_Button" Background="Transparent" Click="BallAction_Count_Button_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <StackPanel Margin="5">
+                                        <TextBlock Text="ファウル"/>
+                                        <TextBlock Text="0" x:Name="BallAction_f_Count_TextBlock" Margin="5,5,10,0"/>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5,5,5" VerticalAlignment="Bottom">
+                                            <TextBlock Text="0" Margin="10,0,0,0" x:Name="BallAction_f_Percent_TextBlock"/>
+                                            <TextBlock Text="%" Margin="0,0,0,0"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                    
+                                </StackPanel>
+                            </Button>
+                        </Border>
+                        <Border 
+                                BorderBrush="Ivory"
+                                BorderThickness="1">
+                            <Button 
+                                x:Name="BallAction_inplay_Count_Button"
+                                Background="Transparent" Click="BallAction_Count_Button_Click">
+                                <StackPanel Orientation="Horizontal">
+                                    <StackPanel Margin="5">
+                                        <TextBlock Text="インプレー"/>
+                                        <TextBlock Text="0" x:Name="BallAction_inplay_Count_TextBlock" Margin="5,5,10,0"/>
+                                        <StackPanel Orientation="Horizontal" Margin="0,5,5,5" VerticalAlignment="Bottom">
+                                            <TextBlock Text="0" Margin="10,0,0,0" x:Name="BallAction_inplay_Percent_TextBlock"/>
+                                            <TextBlock Text="%" Margin="10,0,0,0"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                    
+                                </StackPanel>
+                            </Button>
+                        </Border>
+                    </StackPanel>
+
+                </StackPanel>
+                <StackPanel>
+                    <!-- 
+                    2022.03.31
+                    Height 600 -> 300 
+                    -->
+                    <Grid x:Name="FieldZone" 
+                      Height="300" 
+                      Margin="40" >
+                        <Image x:Name="FiledImage"
+                           Source="/Assets/Field_Top.png"
+                           RenderTransformOrigin="0.0,0.0" >
+                            
+                        </Image>
+                        <Line Stroke="Maroon" X1="120" X2="210" Y1="0" Y2="273"/>
+                        <Line Stroke="Maroon" X1="300" X2="210" Y1="0" Y2="273"/>
+                    </Grid>
+                </StackPanel>
+
+            </StackPanel>
+
+            <StackPanel
+                    Orientation="Vertical"
+                    >
+
+                <StackPanel>
+                    <ListView x:Name="BallScoreListView" 
+                                  Margin="10,10,10,10"
+                                  Height="400">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderBrush="#213a70" 
+                                            BorderThickness="1"
+                                            Margin="5,5,5,5">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Button Content="{Binding ball_box_num}" 
+                                                    Background="{Binding ball_action_color}"
+                                                    Margin="5,5,0,0"
+                                                    Grid.Column="0"
+                                                    Grid.Row="0"/>
+                                        <TextBlock x:Name="BallTotalNumTextListView"
+                                                       Text="{Binding ball_action}" 
+                                                       Grid.Column="1"
+                                                       Style="{ThemeResource BaseTextBlockStyle}"
+                                                       Margin="12,6,0,0" FontSize="14"/>
+                                        <TextBlock x:Name="BallSpeedTextListView"
+                                                       Text="{Binding ball_speed}" 
+                                                       Grid.Column="2"
+                                                       Grid.Row="1"
+                                                       Style="{ThemeResource BodyTextBlockStyle}"
+                                                       Margin="12,0,0,6" HorizontalAlignment="Right"/>
+                                        <TextBlock x:Name="BallTypeTextListView"
+                                                       Text="{Binding ball_type}" 
+                                                       Grid.Column="2"
+                                                       Style="{ThemeResource BodyTextBlockStyle}"
+                                                       Margin="12,6,0,6"/>
+                                        <TextBlock x:Name="BallVHTextListView"
+                                                       Text="{Binding course}" 
+                                                       Grid.Column="4"
+                                                       Style="{ThemeResource BodyTextBlockStyle}"
+                                                       Margin="12,6,0,6"/>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackPanel>
+            </StackPanel>
+
+
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Page>

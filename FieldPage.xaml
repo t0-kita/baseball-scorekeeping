@@ -1,0 +1,324 @@
+﻿<Page
+    x:Class="MMSS.FieldPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MMSS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            
+            <StackPanel Orientation="Vertical">
+                <Grid x:Name="FieldZone" 
+                      Height="600" 
+                      Margin="20,20,20,20" >
+                    <Image x:Name="FiledImage"
+                           Source="/Assets/Field_Top.png"
+                           RenderTransformOrigin="0.0,0.0" 
+                           Tapped="Field_Image_Tapped">
+                        <FlyoutBase.AttachedFlyout>
+                            <MenuFlyout Placement="Left" 
+                                        ShowMode="Transient">
+                                <MenuFlyoutItem 
+                                        Name="MenuFlyItemOut" 
+                                        Text="凡打" 
+                                        Click="InPlay_Item"/>
+                                <MenuFlyoutSubItem 
+                                        Name="MenuFlyItemHit" 
+                                        Text="安打">
+                                    <MenuFlyoutItem 
+                                            Name="MenuFlyItemSingle" 
+                                            Text="シングル" 
+                                            Click="InPlay_Item"/>
+                                    <MenuFlyoutItem 
+                                            Name="MenuFlyItemTwoBase" 
+                                            Text="ツーベース" 
+                                            Click="InPlay_Item"/>
+                                    <MenuFlyoutItem 
+                                            Name="MenuFlyItemThreeBase" 
+                                            Text="スリーベース" 
+                                            Click="InPlay_Item"/>
+                                    <MenuFlyoutItem 
+                                            Name="MenuFlyItemHomeRun" 
+                                            Text="ホームラン" 
+                                            Click="InPlay_Item"/>
+                                </MenuFlyoutSubItem>
+                                <MenuFlyoutItem 
+                                        Name="MenuFlyItemError" 
+                                        Text="エラー"
+                                        Click="InPlay_Item"/>
+                                <MenuFlyoutItem 
+                                        Name="MenuFlyItemFeilder" 
+                                        Text="野選"
+                                        Click="InPlay_Item"/>
+                                <MenuFlyoutSubItem 
+                                        Name="MenuFlyItemOthers" 
+                                        Text="その他">
+                                    <MenuFlyoutItem 
+                                            Name="MenuFlyItemDBB" 
+                                            Text="死球" 
+                                            Click="InPlay_Item" Visibility="Collapsed"/>
+                                    
+                                    <MenuFlyoutItem 
+                                            Name="MenuFlyItemStrikeRun" 
+                                            Text="振り逃げ" 
+                                            Click="InPlay_Item"/>
+                                    <MenuFlyoutItem 
+                                            Name="MenuFlyItemS_bunt" 
+                                            Text="犠打" 
+                                            Click="InPlay_Item"/>
+                                    <MenuFlyoutItem 
+                                            Name="MenuFlyItemS_fly" 
+                                            Text="犠飛" 
+                                            Click="InPlay_Item"/>
+                                </MenuFlyoutSubItem>
+                                <MenuFlyoutItem 
+                                        Name="MenuFlyItemCancel" 
+                                        Text="キャンセル"
+                                        Click="InPlay_Item"/>
+                            </MenuFlyout>
+                        </FlyoutBase.AttachedFlyout>
+
+                    </Image>
+                    <Button x:Name="投手_btn" Visibility="Collapsed" Content="投手" Margin="0,428,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Tapped="Position_Button_Tapped" RightTapped="Position_Button_RightTapped"/>
+                    <Button x:Name="捕手_btn" Visibility="Collapsed" Content="捕手" Margin="0,519,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Tapped="Position_Button_Tapped" RightTapped="Position_Button_RightTapped"/>
+                    <Button x:Name="一塁手_btn" Visibility="Collapsed" Content="一塁手" Margin="484,407,0,0" VerticalAlignment="Top" Tapped="Position_Button_Tapped" RightTapped="Position_Button_RightTapped"/>
+                    <Button x:Name="二塁手_btn" Visibility="Collapsed" Content="二塁手" Margin="467,341,0,0" VerticalAlignment="Top" Tapped="Position_Button_Tapped" RightTapped="Position_Button_RightTapped"/>
+                    <Button x:Name="三塁手_btn" Visibility="Collapsed" Content="三塁手" Margin="283,412,0,0" VerticalAlignment="Top" Tapped="Position_Button_Tapped" RightTapped="Position_Button_RightTapped"/>
+                    <Button x:Name="遊撃手_btn" Visibility="Collapsed" Content="遊撃手" Margin="314,341,0,0" VerticalAlignment="Top" Tapped="Position_Button_Tapped" RightTapped="Position_Button_RightTapped"/>
+                    <Button x:Name="左翼手_btn" Visibility="Collapsed" Content="左翼手" Margin="221,227,0,0" VerticalAlignment="Top" Tapped="Position_Button_Tapped" RightTapped="Position_Button_RightTapped"/>
+                    <Button x:Name="中堅手_btn" Visibility="Collapsed" Content="中堅手" Margin="377,179,0,0" VerticalAlignment="Top" Tapped="Position_Button_Tapped" RightTapped="Position_Button_RightTapped"/>
+                    <Button x:Name="右翼手_btn" Visibility="Collapsed" Content="右翼手" Margin="561,227,0,0" VerticalAlignment="Top" Tapped="Position_Button_Tapped" RightTapped="Position_Button_RightTapped"/>
+                    <StackPanel Orientation="Vertical" 
+                                Height="140" Width="120" 
+                                x:Name="BatterSP" Margin="355,455,355,10">
+                        <Grid Margin="5,5,5,5">
+                            <Image x:Name="HomeSafeImage"
+                               Source="/Assets/Safe.png"
+                               AllowDrop="True"
+                               CanDrag="True"
+                               DragOver="Runner_DragOver" 
+                               Height="35" 
+                                   Drop="Runner_DragDrop"
+                                   Visibility="Collapsed"/>
+                        </Grid>
+                        <Grid Margin="5,5,5,5">
+                            <Image x:Name="BatterImage" 
+                               Source="/Assets/Batter.png" 
+                               Height="30"
+                               CanDrag="True"
+                               AllowDrop="True"
+                                   Visibility="Collapsed" 
+                                   Drop="Runner_DragDrop"
+                                   DragLeave="Runner_DragLeave" 
+                                   DragStarting="Runner_DragStarting"
+                               />
+                        </Grid>
+                        <Grid Margin="5,5,5,5">
+                            <Image x:Name="HomeOutImage"
+                               Source="/Assets/Out.png"
+                               AllowDrop="True"
+                               DragOver="Runner_DragOver" 
+                               Height="35" 
+                                   Drop="Runner_DragDrop"
+                                   Visibility="Collapsed"/>
+                        </Grid>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical" 
+                                Height="140" Width="120" 
+                                x:Name="Runner_1_SP" Margin="475,365,235,115">
+                        <Grid Margin="5,5,5,5">
+                            <Image x:Name="Runner_1_SafeImage"
+                               Source="/Assets/Safe.png"
+                               AllowDrop="True"
+                               DragOver="Runner_DragOver" 
+                                   Drop="Runner_DragDrop"
+                               Height="35"
+                               Visibility="Collapsed" 
+                                   DragLeave="Runner_DragLeave"/>
+                        </Grid>
+                        <Grid Margin="5,5,5,5" Name="Runner_1_Image_Grid">
+                            <Image x:Name="Runner_1_Image" 
+                               Source="/Assets/Runner_1.png" 
+                               Height="30"
+                               CanDrag="True"
+                                   Visibility="Collapsed"
+                               DragOver="Runner_DragOver" 
+                                   Drop="Runner_DragDrop" 
+                                   DragLeave="Runner_DragLeave"
+                                   DragStarting="Runner_DragStarting"
+                                   RightTapped="Runner_Image_RightTapped"
+                               />
+                        </Grid>
+                        <Grid Margin="5,5,5,5">
+                            <Image x:Name="Runner_1_OutImage"
+                               Source="/Assets/Out.png"
+                               AllowDrop="True"
+                               DragOver="Runner_DragOver" 
+                                   Drop="Runner_DragDrop"
+                                   Visibility="Collapsed"
+                               Height="35"/>
+                        </Grid>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical" 
+                                Height="140" Width="120" 
+                                x:Name="Runner_2_SP" Margin="355,273,355,207">
+                        <Grid Margin="5,5,5,5">
+                            <Image x:Name="Runner_2_SafeImage"
+                                   Source="/Assets/Safe.png"
+                                   AllowDrop="True"
+                                   DragOver="Runner_DragOver" 
+                                   Height="35"    
+                                   Drop="Runner_DragDrop"
+                                   Visibility="Collapsed" 
+                                   />
+                        </Grid>
+                        <Grid 
+                            Margin="5,5,5,5" 
+                            Name="Runner_2_Image_Grid"
+                            BorderBrush="Transparent"
+                            BorderThickness="1">
+                            <Image x:Name="Runner_2_Image" 
+                               Source="/Assets/Runner_2.png" 
+                               Height="30"
+                               CanDrag="True"
+                               DragOver="Runner_DragOver"
+                                   Visibility="Collapsed" 
+                                   Drop="Runner_DragDrop"
+                                   DragLeave="Runner_DragLeave"
+                                   DragStarting="Runner_DragStarting"
+                                   RightTapped="Runner_Image_RightTapped"/>
+                        </Grid>
+                        <Grid Margin="5,5,5,5">
+                            <Image x:Name="Runner_2_OutImage"
+                               Source="/Assets/Out.png"
+                               AllowDrop="True"
+                               DragOver="Runner_DragOver" 
+                               Height="35"
+                                   Drop="Runner_DragDrop"
+                                   Visibility="Collapsed"
+                                   DragLeave="Runner_DragLeave"/>
+                        </Grid>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Vertical" 
+                                Height="140" Width="120" 
+                                x:Name="Runner_3_SP" 
+                                Margin="230,365,480,115">
+
+                        <Grid Margin="5,5,5,5" Name="Runner_3_Image_Grid">
+                            <Image x:Name="Runner_3_SafeImage"
+                               Source="/Assets/Safe.png"
+                               AllowDrop="True"
+                               DragOver="Runner_DragOver" 
+                               Height="35"
+                                   Drop="Runner_DragDrop"
+                                   Visibility="Collapsed"
+                                   RightTapped="Runner_Image_RightTapped"/>
+                        </Grid>
+                        <Grid Margin="5,5,5,5">
+                            <Image x:Name="Runner_3_Image" 
+                                   Source="/Assets/Runner_3.png" 
+                                   Height="30"
+                                   CanDrag="True"
+                                   DragOver="Runner_DragOver"
+                                   Visibility="Collapsed" 
+                                   DragLeave="Runner_DragLeave" 
+                                   DragStarting="Runner_DragStarting"
+                                   RightTapped="Runner_Image_RightTapped"/>
+                        </Grid>
+                        <Grid Margin="5,5,5,5">
+                            <Image x:Name="Runner_3_OutImage"
+                               Source="/Assets/Out.png"
+                               AllowDrop="True"
+                               DragOver="Runner_DragOver" 
+                               Height="35" 
+                                   Drop="Runner_DragDrop"
+                                   Visibility="Collapsed"
+                                   VerticalAlignment="Bottom"/>
+                        </Grid>
+                    </StackPanel>
+
+
+                </Grid>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <StackPanel x:Name="Hit_SPH" Orientation="Horizontal"
+                            Margin="10,10,0,0">
+                    <StackPanel.ChildrenTransitions>
+                        <TransitionCollection>
+                            <EntranceThemeTransition IsStaggeringEnabled="True" />
+                        </TransitionCollection>
+                    </StackPanel.ChildrenTransitions>
+                    <TextBlock x:Name="Hit_TB" Text="H "/>
+                    <Ellipse x:Name="Hit_lamp" Height="20" Width="20" Stroke="Black"/>
+                </StackPanel>
+                <StackPanel 
+                    x:Name="Error_SPH" 
+                    Orientation="Horizontal"
+                    Margin="10,0,0,0">
+                    <StackPanel.ChildrenTransitions>
+                        <TransitionCollection>
+                            <EntranceThemeTransition IsStaggeringEnabled="True" />
+                        </TransitionCollection>
+                    </StackPanel.ChildrenTransitions>
+                    <TextBlock x:Name="Error_TB" Text="E "/>
+                    <Ellipse x:Name="Error_lamp" Height="20" Width="20" Stroke="Black"/>
+                </StackPanel>
+
+                <StackPanel 
+                    x:Name="Field_SPH" 
+                    Orientation="Horizontal"
+                    Margin="10,0,0,10"
+                    >
+                    <StackPanel.ChildrenTransitions>
+                        <TransitionCollection>
+                            <EntranceThemeTransition IsStaggeringEnabled="True" />
+                        </TransitionCollection>
+                    </StackPanel.ChildrenTransitions>
+                    <TextBlock x:Name="Feilder_TB" Text="Fe"/>
+                    <Ellipse x:Name="Feilder_lamp" Height="20" Width="20" Stroke="Black"/>
+                </StackPanel>
+                <ComboBox
+                        x:Name="HitTypeComboBox"
+                        PlaceholderText="打球タイプ"
+                        SelectionChanged="HitTypeComboBox_SelectionChanged"
+                        Margin="10">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock
+                                Text="{Binding hit_type}"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <Grid CanDrag="True">
+                    <Button x:Name="take1" 
+                        Content="守備登録"
+                        CanDrag="True" 
+                        Click="Position_Display"
+                        Width="100"
+                        Height="40"
+                        Margin="10"
+                        VerticalAlignment="Top"/>
+                    <!--
+                    <Button x:Name="StealRunner_1_btn"/>
+                    <Button x:Name="StealRunner_2_btn"/>
+                    <Button x:Name="StealRunner_3_btn"/>
+                    -->
+
+                </Grid>
+                
+
+            </StackPanel>
+
+
+        </StackPanel>
+
+
+    </Grid>
+</Page>

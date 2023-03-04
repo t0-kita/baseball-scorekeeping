@@ -1,0 +1,1290 @@
+﻿<Page
+    x:Class="MMSS.ScorePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MMSS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="Score">
+        <NavigationView x:Name="Navigations" 
+                        PaneDisplayMode="LeftMinimal"
+                        IsPaneOpen="False"
+                        ItemInvoked="NavView_ItemInvoked" 
+                        Visibility="Visible"
+                        >
+            <NavigationView.MenuItems>
+                
+                
+                <NavigationViewItem x:Name="Main" Content="Top" Tag="Top"/>
+                <NavigationViewItem x:Name="Data" Content="Data" Tag="Data"/>
+                
+                <NavigationViewItem x:Name="Opt" Content="Option" Tag="Opt" Visibility="Collapsed"/>
+                <NavigationViewItem x:Name="Team" Content="Team" Tag="Team" Visibility="Collapsed"/>
+                <NavigationViewItem x:Name="Order" Content="Order" Tag="Order" Visibility="Collapsed"/>
+                
+            </NavigationView.MenuItems>
+        </NavigationView>
+
+        <StackPanel Orientation="Horizontal">
+
+            <StackPanel Orientation="Vertical">
+                <Grid x:Name="ZoneGrid" 
+                      Margin="100,10,0,0" 
+                      Height="481" 
+                      VerticalAlignment="Top" 
+                      HorizontalAlignment="Left" 
+                      Width="335">
+
+                    <Image 
+                        x:Name="ZoneImage" 
+                        Source="/Assets/zone.png" 
+                        RenderTransformOrigin="0.0,0.0" 
+                        Tapped="Zone_Image_Tapped" Margin="0,0,0,0">
+                        
+
+                        <FlyoutBase.AttachedFlyout>
+                            <MenuFlyout x:Name="MenuFlyItem"
+                                         Placement="Left"
+                                        ShowMode="Transient" 
+                                        Closed="MenuFlyItem_Closed">
+                                <MenuFlyoutItem Name="MenuFlyItemBall" 
+                                                Text="ボール" Click="Next_Ball"/>
+                                <MenuFlyoutItem Name="MenuFlyItemStrike" 
+                                                Text="見逃し" Click="Next_Ball"/>
+                                <MenuFlyoutItem Name="MenuFlyItemSwingStrike" 
+                                                Text="空振り" Click="Next_Ball"/>
+                                <MenuFlyoutItem Name="MenuFlyItemFoul" 
+                                                Text="ファウル" Click="Next_Ball"/>
+                                <MenuFlyoutItem Name="MenuFlyItemInPlay" 
+                                                Text="インプレー" Click="Next_Ball"/>
+                                <MenuFlyoutItem Name="MenuFlyItemDead" 
+                                                Text="死球" Click="Next_Ball"/>
+                                <MenuFlyoutItem Name="MenuFlyItemCancel" 
+                                                Text="キャンセル" Click="Cancel_Ball"/>
+                            </MenuFlyout>
+                        </FlyoutBase.AttachedFlyout>
+                        
+                    </Image>
+                    
+                </Grid>
+                <Grid Margin="100,10,0,0">
+                    <StackPanel Orientation="Horizontal">
+                        <Border
+                            BorderBrush="#213a70" 
+                            BorderThickness="1">
+                            <ListView 
+                                x:Name="BallTypeListView" 
+                                Height="120" 
+                                Width="180"
+                                AllowDrop="True"
+                                CanReorderItems="True"
+                                Margin="10,0,10,0" 
+                                Tapped="BallTypeListView_Item_Tapped" 
+                                SelectionChanged="BallTypeListView_SelectionChanged">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <TextBlock Text="{Binding ball_type}" 
+                                           Grid.Column="0"
+                                           Style="{ThemeResource BaseTextBlockStyle}"
+                                           Margin="0,0,0,0"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </Border>
+                        <StackPanel>
+                            <StackPanel 
+                            Orientation="Horizontal"
+                            Margin="10,10,0,10"
+                            VerticalAlignment="Top">
+                                <TextBox 
+                                x:Name="BallSpeedText" 
+                                Width="90"   
+                                Height="35"
+                                PlaceholderText="入力.."
+                                MaxLength="3"
+                                TextWrapping="NoWrap"
+                                InputScope="Number" 
+                                TextChanged="BallSpeedText_TextChanged"
+                                />
+
+                                <TextBlock Text="km/h"
+                               VerticalAlignment="Bottom"
+                               SelectionHighlightColor="AliceBlue" 
+                               TextWrapping="Wrap"
+                               LineHeight="10"
+                               LineStackingStrategy="BaselineToBaseline" FontSize="10"/>
+                            </StackPanel>
+                            <Button 
+                                x:Name="EntryBallResult_Button"
+                                Content="登録"
+                                Height="50"
+                                Width="100"
+                                Margin="10" HorizontalAlignment="Right" VerticalAlignment="Bottom" 
+                                Visibility="Collapsed" 
+                                Click="EntryBallResult_Button_Click"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel x:Name="TypeStackPanel" Orientation="Horizontal" Margin="18,0,-18,0" Visibility="Collapsed">
+                        <StackPanel.ChildrenTransitions>
+                            <TransitionCollection>
+                                <EntranceThemeTransition IsStaggeringEnabled="True" />
+                            </TransitionCollection>
+                        </StackPanel.ChildrenTransitions>
+                        <Button x:Name="type0_btn" Background="Transparent" Click="Type_Item_Tapped" Loaded="Type_Item_Load">
+                            <Image x:Name="type0" Source="/Assets/type0.png" Height="50" Width="50"/>
+                        </Button>
+                        <Button x:Name="type1_btn" Background="Transparent" Click="Type_Item_Tapped">
+                            <Image x:Name="type1" Source="/Assets/type1.png" Height="50" Width="50"/>
+                        </Button>
+                        <Button x:Name="type2_btn" Background="Transparent" Click="Type_Item_Tapped">
+                            <Image x:Name="type2" Source="/Assets/type2.png" Height="50" Width="50"/>
+                        </Button>
+                        <Button x:Name="type3_btn" Background="Transparent" Click="Type_Item_Tapped">
+                            <Image x:Name="type3" Source="/Assets/type3.png" Height="50" Width="50"/>
+                        </Button>
+                        <Button x:Name="type4_btn" Background="Transparent" Click="Type_Item_Tapped">
+                            <Image x:Name="type4" Source="/Assets/type4.png" Height="50" Width="50"/>
+                        </Button>
+                        <Button x:Name="type5_btn" Background="Transparent" Click="Type_Item_Tapped">
+                            <Image x:Name="type5" Source="/Assets/type5.png" Height="50" Width="50"/>
+                        </Button>
+                    </StackPanel>
+                    
+                </Grid>
+                <TextBox 
+                    Margin="100,0,0,0"
+                    Header="メモ"
+                    x:Name="BallCommentTextBox"
+                    Height="80"
+                    TextWrapping="NoWrap"
+                    Visibility="Collapsed"/>
+                
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Grid Margin="0,0,0,0">
+
+                </Grid>
+
+                <StackPanel x:Name="Counts"
+                                Orientation="Vertical" 
+                                BorderBrush="AliceBlue" 
+                                BorderThickness="1" 
+                                Margin="10,20,10,10">
+                    <TextBlock Text="カウント" 
+                               SelectionHighlightColor="AliceBlue" 
+                               TextWrapping="Wrap"
+                               LineHeight="10"
+                               LineStackingStrategy="BaselineToBaseline"/>
+                    <StackPanel x:Name="ballCount" Orientation="Horizontal">
+                        <StackPanel.ChildrenTransitions>
+                            <TransitionCollection>
+                                <EntranceThemeTransition IsStaggeringEnabled="True" />
+                            </TransitionCollection>
+                        </StackPanel.ChildrenTransitions>
+                        <Ellipse x:Name="oneBall" Height="20" Width="20" Stroke="Black"/>
+                        <Ellipse x:Name="twoBall" Height="20" Width="20" Stroke="Black"/>
+                        <Ellipse x:Name="threeBall" Height="20" Width="20" Stroke="Black"/>
+                        <Ellipse x:Name="fourBall" Height="20" Width="20" Stroke="Black"/>
+                    </StackPanel>
+                    <StackPanel x:Name="strikeCount" Orientation="Horizontal">
+                        <StackPanel.ChildrenTransitions>
+                            <TransitionCollection>
+                                <EntranceThemeTransition IsStaggeringEnabled="True" />
+                            </TransitionCollection>
+                        </StackPanel.ChildrenTransitions>
+                        <Ellipse x:Name="oneStrike" Height="20" Width="20" Stroke="Black"/>
+                        <Ellipse x:Name="twoStrike" Height="20" Width="20" Stroke="Black"/>
+                        <Ellipse x:Name="threeStrike" Height="20" Width="20" Stroke="Black"/>
+
+                    </StackPanel>
+                    <StackPanel x:Name="outCount"  Orientation="Horizontal">
+                        <StackPanel.ChildrenTransitions>
+                            <TransitionCollection>
+                                <EntranceThemeTransition IsStaggeringEnabled="True" />
+                            </TransitionCollection>
+                        </StackPanel.ChildrenTransitions>
+                        <Ellipse x:Name="oneOut" Height="20" Width="20" Stroke="Black"/>
+                        <Ellipse x:Name="twoOut" Height="20" Width="20" Stroke="Black"/>
+                        <Ellipse x:Name="threeOut" Height="20" Width="20" Stroke="Black"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <TextBlock Text="ランナー"/>
+                <CheckBox 
+                    x:Name="run_1" 
+                    Content="一塁" 
+                    Click="Runner_Item_Clicked" 
+                    Unchecked="Runner_Unchecked"
+                    Margin="10,0,0,0"
+                    />
+                <CheckBox 
+                    x:Name="run_2" 
+                    Content="二塁" 
+                    Click="Runner_Item_Clicked" 
+                    Unchecked="Runner_Unchecked"
+                    Margin="10,0,0,0"
+                    />
+                <CheckBox 
+                    x:Name="run_3" 
+                    Content="三塁" 
+                    Click="Runner_Item_Clicked" 
+                    Unchecked="Runner_Unchecked"
+                    Margin="10,0,0,0"
+                    />
+                
+                <Button
+                    x:Name="PickOff_btn"
+                    Content="けん制" 
+                    
+                    Margin="10" 
+                    >
+                    <Button.Flyout>
+                        <MenuFlyout Placement="Right" 
+                                        ShowMode="Transient">
+                            <MenuFlyoutSubItem  
+                                        Text="一塁">
+                                <MenuFlyoutItem 
+                                            Name="PickOff_1_Safe" 
+                                            Text="セーフ" 
+                                            Click="PickOff_Item_Click"/>
+                                <MenuFlyoutItem 
+                                            Name="PickOff_1_Out" 
+                                            Text="アウト" 
+                                            Click="PickOff_Item_Click"/>
+                                <MenuFlyoutItem 
+                                            Name="PickOff_1_GoField" 
+                                            Text="フィールドへ" 
+                                            Click="PickOff_Item_Click"/>
+                            </MenuFlyoutSubItem>
+                            <MenuFlyoutSubItem 
+                                        Text="二塁">
+                                <MenuFlyoutItem 
+                                            Name="PickOff_2_Safe" 
+                                            Text="セーフ" 
+                                            Click="PickOff_Item_Click"/>
+                                <MenuFlyoutItem 
+                                            Name="PickOff_2_Out" 
+                                            Text="アウト" 
+                                            Click="PickOff_Item_Click"/>
+                                <MenuFlyoutItem 
+                                            Name="PickOff_2_GoField" 
+                                            Text="フィールドへ" 
+                                            Click="PickOff_Item_Click"/>
+                            </MenuFlyoutSubItem>
+                            <MenuFlyoutSubItem 
+                                        Text="三塁">
+                                <MenuFlyoutItem 
+                                            Name="PickOff_3_Safe" 
+                                            Text="セーフ" 
+                                            Click="PickOff_Item_Click"/>
+                                <MenuFlyoutItem 
+                                            Name="PickOff_3_Out" 
+                                            Text="アウト" 
+                                            Click="PickOff_Item_Click"/>
+                                <MenuFlyoutItem 
+                                            Name="PickOff_3_GoField" 
+                                            Text="フィールドへ" 
+                                            Click="PickOff_Item_Click"/>
+                            </MenuFlyoutSubItem>
+                        </MenuFlyout>
+                    </Button.Flyout>
+                </Button>
+                <Button 
+                    x:Name="Runner_Play_btn"
+                    Content="走塁" 
+                    Margin="10" Click="Runner_Play_btn_Click"
+                    />
+                <Button
+                    Content="その他"
+                    Margin="10">
+                    <Button.Flyout>
+                        <MenuFlyout>
+                            <MenuFlyoutItem Text="申告敬遠" Click="OtherAction_Item_Click"/>
+                            <MenuFlyoutItem Text="打撃妨害" Click="OtherAction_Item_Click"/>
+                        </MenuFlyout>
+                    </Button.Flyout>
+                </Button>
+
+                <Button 
+                    Content="選手交代" 
+                    Click="GamePlayingPlayerChangMsg_btn_Clicked"
+                    Margin="10"
+                    />
+                <Button
+                    Content="カウント変更"
+                    Margin="10,50,10,10">
+                    <Button.Flyout>
+                        <MenuFlyout>
+                            <MenuFlyoutSubItem Text="ボール" >
+                                <MenuFlyoutItem Text="0ボール" Click="OutCountChange_Item_Click"/>
+                                <MenuFlyoutItem Text="1ボール" Click="OutCountChange_Item_Click"/>
+                                <MenuFlyoutItem Text="2ボール" Click="OutCountChange_Item_Click"/>
+                                <MenuFlyoutItem Text="3ボール" Click="OutCountChange_Item_Click"/>
+                            </MenuFlyoutSubItem>
+                            <MenuFlyoutSubItem Text="ストライク" >
+                                <MenuFlyoutItem Text="0ストライク" Click="OutCountChange_Item_Click"/>
+                                <MenuFlyoutItem Text="1ストライク" Click="OutCountChange_Item_Click"/>
+                                <MenuFlyoutItem Text="2ストライク" Click="OutCountChange_Item_Click"/>
+                            </MenuFlyoutSubItem>
+                            <MenuFlyoutSubItem Text="アウト" >
+                                <MenuFlyoutItem Text="0アウト" Click="OutCountChange_Item_Click"/>
+                                <MenuFlyoutItem Text="1アウト" Click="OutCountChange_Item_Click"/>
+                                <MenuFlyoutItem Text="2アウト" Click="OutCountChange_Item_Click"/>
+                                <MenuFlyoutItem Text="チェンジ" Click="OutCountChange_Item_Click"/>
+                            </MenuFlyoutSubItem>
+                        </MenuFlyout>
+                    </Button.Flyout>
+                </Button>
+                <Button
+                    Content="打順変更"
+                    Margin="10">
+                    <Button.Flyout>
+                        <MenuFlyout>
+                            <MenuFlyoutItem Text="次の打者へ" Click="BatterIdChange_Item_Click"/>
+                            <MenuFlyoutItem Text="前の打者へ" Click="BatterIdChange_Item_Click"/>
+                        </MenuFlyout>
+                    </Button.Flyout>
+                </Button>
+                <Button
+                    Content="攻撃変更"
+                    Margin="10"
+                    Visibility="Collapsed">
+                    <Button.Flyout>
+                        <MenuFlyout>
+                            <MenuFlyoutItem Text="次の攻撃へ" Click="AttackChange_Item_Click"/>
+                            <MenuFlyoutItem Text="前の攻撃へ" Click="AttackChange_Item_Click"/>
+                        </MenuFlyout>
+                    </Button.Flyout>
+                </Button>
+                
+                <Button x:Name="cancel_btn" Visibility="Collapsed"/>
+            </StackPanel>
+
+            <StackPanel
+                    Orientation="Vertical"
+                    >
+                <ListView
+                    x:Name="ScoreBoardDisplay" 
+                    >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel 
+                                    Orientation="Horizontal"
+                                    Background="Black">
+                                <StackPanel>
+                                    <Border BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                            Text="チーム名"
+                                            Width="100"
+                                            Foreground="White"
+                                            Padding="30,0,0,0"/>
+                                    </Border>
+                                    <Border BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_teamName_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_teamName}"
+                                            Width="100"
+                                            Foreground="White"
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                    <Border BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_teamName_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_teamName}"
+                                            Width="100"
+                                            Foreground="White"
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                                Text="1" 
+                                            Width="30"
+                                                Foreground="White" 
+                                                Padding="10,0,0,0"/>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_1_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_1}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_1_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_1}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                                Text="2" 
+                                            Width="30"
+                                                Foreground="White" 
+                                                Padding="10,0,0,0"/>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_2_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_2}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+                                        </Button>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_2_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_2}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+
+                                <StackPanel>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                                Text="3" 
+                                            Width="30"
+                                                Foreground="White" 
+                                                Padding="10,0,0,0"/>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_3_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_3}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_3_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_3}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                                Text="4" 
+                                                Width="30"
+                                                Foreground="White" 
+                                                Padding="10,0,0,0"/>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_4_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_4}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_4_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_4}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                                Text="5" 
+                                                Width="30"
+                                                Foreground="White" 
+                                                Padding="10,0,0,0"/>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_5_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_5}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_5_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_5}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                                Text="6" 
+                                                Width="30"
+                                                Foreground="White" 
+                                                Padding="10,0,0,0"/>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_6_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_6}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_6_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_6}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                                Text="7" 
+                                                Width="30"
+                                                Foreground="White" 
+                                                Padding="10,0,0,0"/>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_7_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_7}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_7_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_7}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                                Text="8" 
+                                                Width="30"
+                                                Foreground="White" 
+                                                Padding="10,0,0,0"/>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_8_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_8}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_8_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_8}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                                Text="9" 
+                                                Width="30"
+                                                Foreground="White" 
+                                                Padding="10,0,0,0"/>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_9_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_9}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_9_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_9}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                                Text="10" 
+                                                Width="30"
+                                                Foreground="White" 
+                                                Padding="10,0,0,0"/>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_10_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_10}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_10_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_10}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                                Text="11" 
+                                                Width="30"
+                                                Foreground="White" 
+                                                Padding="10,0,0,0"/>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_11_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_11}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_11_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_11}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                                Text="12" 
+                                                Width="30"
+                                                Foreground="White" 
+                                                Padding="10,0,0,0"/>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_12_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_12}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_12_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_12}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                                Text="計" 
+                                                Width="30"
+                                                Foreground="White" 
+                                                Padding="10,0,0,0"/>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_total_score_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_total_score}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_total_score_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_total_score}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                                Text="H" 
+                                                Width="30"
+                                                Foreground="White" 
+                                                Padding="10,0,0,0"/>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_hit_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_hit}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_hit_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_hit}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <TextBlock 
+                                                Text="E" 
+                                                Width="30"
+                                                Foreground="White" 
+                                                Padding="10,0,0,0"/>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="top_error_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding top_error}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                    <Border 
+                                            BorderBrush="#213a70" 
+                                            BorderThickness="1">
+                                        <Button 
+                                            x:Name="btm_error_btn"
+                                            Click="ScoreBoardDisplay_Button_Click"
+                                            Content="{Binding btm_error}"
+                                            Foreground="White" 
+                                            Height="30"
+                                            >
+
+                                        </Button>
+                                    </Border>
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <StackPanel>
+                    <Border 
+                        BorderBrush="#213a70" 
+                        BorderThickness="1"
+                        Margin="5,5,5,5"
+                        >
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock 
+                                Text="投手" 
+                                Grid.Column="0"
+                                Style="{ThemeResource BaseTextBlockStyle}" 
+                                Margin="12,6,0,0" 
+                                FontSize="14"
+                                />
+                            <TextBlock 
+                                x:Name="PitcherTeamNameTextBlock"
+                                Text="" 
+                                Grid.Column="2"
+                                Grid.Row="0"
+                                Style="{ThemeResource BaseTextBlockStyle}" 
+                                Margin="6,6,0,0" 
+                                FontSize="16"
+                                />
+                            <TextBlock 
+                                x:Name="PitcherDataTextBlock"
+                                Text="" 
+                                Grid.Column="2"
+                                Grid.Row="1"
+                                Style="{ThemeResource BaseTextBlockStyle}" 
+                                Margin="6,6,0,0" 
+                                FontSize="20"
+                                />
+                            <TextBox 
+                                x:Name="PitcherDataCommentTextBox"
+                                Text="" 
+                                Grid.Column="3"
+                                Grid.Row="1"
+                                Width="300"
+                                Height="40"
+                                Margin="6,6,0,0" 
+                                FontSize="14"
+                                AcceptsReturn="True"
+                                />
+                            <Button
+                                x:Name="PitcherDataComment_btn"
+                                Grid.Column="4"
+                                Grid.Row="1"
+                                Content="追記" 
+                                Click="Cmnt_btn_Click" 
+                                HorizontalAlignment="Center" 
+                                Margin="0,0,0,7" 
+                                VerticalAlignment="Bottom"
+                                />
+                            <TextBlock 
+                                x:Name="PitcherDataHandTextBox"
+                                Grid.Column="1"
+                                Grid.Row="1"
+                                Style="{ThemeResource BaseTextBlockStyle}" 
+                                Margin="6,6,0,0" 
+                                FontSize="14"
+                                />
+                        </Grid>
+                    </Border>
+                    <Border 
+                        BorderBrush="#213a70" 
+                        BorderThickness="1"
+                        Margin="5,5,5,5"
+                        >
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+
+                            <TextBlock 
+                                Text="打者" 
+                                Grid.Column="0"
+                                Style="{ThemeResource BaseTextBlockStyle}" 
+                                Margin="12,6,0,0" 
+                                FontSize="14"
+                                />
+                            <TextBlock 
+                                x:Name="BatterTeamNameTextBlock"
+                                Text="" 
+                                Grid.Column="2"
+                                Style="{ThemeResource BaseTextBlockStyle}" 
+                                Margin="6,6,0,0" 
+                                FontSize="16"
+                                />
+                            <TextBlock 
+                                x:Name="BatterDataOrderIdTextBlock"
+                                Text="" 
+                                Grid.Column="0"
+                                Grid.Row="1"
+                                Style="{ThemeResource BaseTextBlockStyle}" 
+                                Margin="12,6,0,0" 
+                                FontSize="14"
+                                />
+                            <TextBlock 
+                                x:Name="BatterDataTextBlock"
+                                Text="" 
+                                Grid.Column="2"
+                                Grid.Row="1"
+                                Style="{ThemeResource BaseTextBlockStyle}" 
+                                Margin="6,6,0,0" 
+                                FontSize="20"
+                                />
+                            <TextBox 
+                                x:Name="BatterDataCommentTextBox"
+                                Text="" 
+                                Grid.Column="3"
+                                Grid.Row="1"
+                                Width="300"
+                                Height="40"
+                                Margin="6,6,0,0" 
+                                FontSize="14"
+                                AcceptsReturn="True"
+                                />
+                            <Button
+                                x:Name="BatterDataComment_btn"
+                                Grid.Column="4"
+                                Grid.Row="1"
+                                Content="追記" 
+                                Click="Cmnt_btn_Click"/>
+                            <TextBlock 
+                                x:Name="BatterDataBatTextBox"
+                                Grid.Column="1"
+                                Grid.Row="1" 
+                                Height="33" 
+                                VerticalAlignment="Top"
+                                Style="{ThemeResource BaseTextBlockStyle}" 
+                                Margin="6,6,0,0" 
+                                FontSize="14"
+                                />
+                        </Grid>
+                    </Border>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <ListView x:Name="BallScoreListView" 
+                              Margin="10,10,00,10"
+                              Height="375" 
+                              Width="400"
+                              Header="投球"
+                              CanReorderItems="True"
+                              AllowDrop="True" 
+                              DragItemsCompleted="BallScoreListView_DragItemsComplete" 
+                              DragItemsStarting="BallScoreListView_DragItemsStarting" 
+                              Drop="BallScoreListView_Drop" 
+                              DropCompleted="BallScoreListView_DropComplete">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderBrush="#213a70" 
+                                            BorderThickness="1"
+                                            Margin="5,5,5,5">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Button 
+                                            x:Name="BallScoreListView_Button"
+                                            Content="{Binding ball_box_num}" 
+                                            Background="{Binding ball_action_color}"
+                                            Margin="5,5,0,0"
+                                            Grid.Column="0"
+                                            Grid.Row="0" Click="BallScoreListView_Button_Click"
+                                            >
+                                            <FlyoutBase.AttachedFlyout>
+                                                <MenuFlyout>
+                                                    <!--
+                                                    <MenuFlyoutItem Text="修正" Click="BallScoreListView_FlyoutItem_Click"/>
+                                                    -->
+                                                    <MenuFlyoutItem Text="削除" Click="BallScoreListView_FlyoutItem_Click"/>
+                                                </MenuFlyout>
+                                            </FlyoutBase.AttachedFlyout>
+                                        </Button>
+                                        <TextBlock x:Name="BallTotalNumTextListView"
+                                                       Text="{Binding ball_actionST}" 
+                                                       Grid.Column="1"
+                                                       Style="{ThemeResource BaseTextBlockStyle}"
+                                                       Margin="12,6,0,0" FontSize="14"/>
+                                        <TextBlock x:Name="BallSpeedTextListView"
+                                                       Text="{Binding ball_speed}" 
+                                                       Grid.Column="2"
+                                                       Grid.Row="1"
+                                                       Style="{ThemeResource BodyTextBlockStyle}"
+                                                       Margin="12,0,0,6" HorizontalAlignment="Right"
+                                                   />
+                                        <TextBlock x:Name="BallTypeTextListView"
+                                                       Text="{Binding ball_type}" 
+                                                       Grid.Column="2"
+                                                       Style="{ThemeResource BodyTextBlockStyle}"
+                                                       Margin="12,6,0,6"/>
+                                        <TextBlock x:Name="BallVHTextListView"
+                                                       Text="{Binding course}" 
+                                                       Grid.Column="3"
+                                                       Style="{ThemeResource BodyTextBlockStyle}"
+                                                       Margin="12,6,0,6"/>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                    <ListView x:Name="BoxScoreListView"
+                              Margin="5"
+                              Height="375"
+                              Header="打席">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderBrush="#213a70" 
+                                            BorderThickness="1"
+                                            Margin="5,5,5,5">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="*"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Button 
+                                            x:Name="BoxScoreListView_Button"
+                                            Content="{Binding ining_box_id}" 
+
+                                            Margin="5,5,0,0"
+                                            Grid.Column="0"
+                                            Grid.Row="0" Click="BoxScoreListView_Button_Click"
+                                            >
+                                            <FlyoutBase.AttachedFlyout>
+                                                <MenuFlyout>
+                                                    <MenuFlyoutItem Text="修正" Click="BoxScoreListView_FlyoutItem_Click"/>
+                                                    <!--<MenuFlyoutItem Text="削除" Click="BoxScoreListView_FlyoutItem_Click"/>-->
+                                                </MenuFlyout>
+                                            </FlyoutBase.AttachedFlyout>
+                                        </Button>
+
+                                        <TextBlock x:Name="BoxPlayerDataOrder_TextBlock"
+                                                       Text="{Binding order_id}" 
+                                                       Grid.Column="0"
+                                                   Grid.Row="1"
+                                                       Style="{ThemeResource BodyTextBlockStyle}"
+                                                   Margin="12,6,0,0"
+                                                       />
+                                        <TextBlock x:Name="BoxPlayerDataPosition_TextBlock"
+                                                       Text="{Binding positionST}" 
+                                                       Grid.Column="1"
+                                                   Grid.Row="1"
+                                                       Style="{ThemeResource BodyTextBlockStyle}"
+                                                   Margin="12,6,0,0"
+                                                       />
+                                        <TextBlock x:Name="BoxPlayerDataName_TextBlock"
+                                                       Text="{Binding player_name}" 
+                                                       Grid.Column="2"
+                                                       Grid.Row="1"
+                                                   Width="100"
+                                                   Margin="12,6,0,0"
+                                                       Style="{ThemeResource BodyTextBlockStyle}"
+                                                       />
+                                        <TextBlock x:Name="BoxPlayerDataNumber_TextBlock"
+                                                       Text="{Binding player_num}" 
+                                                       Grid.Column="3"
+                                                   Grid.Row="1"
+                                                       Style="{ThemeResource BodyTextBlockStyle}"
+                                                   Margin="12,6,0,0"
+                                                       />
+                                        
+                                    </Grid>
+
+                                </Border>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+
+                </StackPanel>
+                
+            </StackPanel>
+
+
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Page>

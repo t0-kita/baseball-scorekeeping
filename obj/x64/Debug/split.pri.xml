@@ -1,0 +1,2496 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="6b8bb393-4ac4-4dce-96b0-b5e728928102" version="1.0" primary="true">
+		<Qualifiers>
+			<AlternateForm>UNPLATED</AlternateForm>
+			<Language>EN-US</Language>
+			<Scale>200</Scale>
+			<TargetSize>24</TargetSize>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/App.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataAnalysisPage.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/DataAnalysisPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataPage.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/DataPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FieldPage.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/FieldPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GameMatchTeamSelect.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/GameMatchTeamSelect.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GameOptions.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/GameOptions.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/MainPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MMSS.xr.xml" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/MMSS.xr.xml">
+				<Candidate type="Path">
+					<Value>MMSS.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="OrderListPage.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/OrderListPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="OrderPage.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/OrderPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ScorePage.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/ScorePage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SettingsPage.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/SettingsPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="BadgeLogo.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/BadgeLogo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\BadgeLogo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Batter.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/Batter.png">
+					<Candidate type="Path">
+						<Value>Assets\Batter.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="change.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/change.png">
+					<Candidate type="Path">
+						<Value>Assets\change.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Field_Top.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/Field_Top.png">
+					<Candidate type="Path">
+						<Value>Assets\Field_Top.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="fourBall.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/fourBall.png">
+					<Candidate type="Path">
+						<Value>Assets\fourBall.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="gameSet.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/gameSet.png">
+					<Candidate type="Path">
+						<Value>Assets\gameSet.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Home.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/Home.png">
+					<Candidate type="Path">
+						<Value>Assets\Home.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LockScreenLogo.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/LockScreenLogo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\LockScreenLogo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Out.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/Out.png">
+					<Candidate type="Path">
+						<Value>Assets\Out.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Runner_1.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/Runner_1.png">
+					<Candidate type="Path">
+						<Value>Assets\Runner_1.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Runner_2.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/Runner_2.png">
+					<Candidate type="Path">
+						<Value>Assets\Runner_2.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Runner_3.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/Runner_3.png">
+					<Candidate type="Path">
+						<Value>Assets\Runner_3.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Safe.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/Safe.png">
+					<Candidate type="Path">
+						<Value>Assets\Safe.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square150x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/Square310x310Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square310x310Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/Square44x44Logo.png">
+					<Candidate qualifiers="TargetSize-24, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square71x71Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/StoreLogo.png">
+					<Candidate type="Path">
+						<Value>Assets\StoreLogo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="strikeOut.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/strikeOut.png">
+					<Candidate type="Path">
+						<Value>Assets\strikeOut.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="type0.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/type0.png">
+					<Candidate type="Path">
+						<Value>Assets\type0.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="type1.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/type1.png">
+					<Candidate type="Path">
+						<Value>Assets\type1.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="type2.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/type2.png">
+					<Candidate type="Path">
+						<Value>Assets\type2.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="type3.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/type3.png">
+					<Candidate type="Path">
+						<Value>Assets\type3.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="type4.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/type4.png">
+					<Candidate type="Path">
+						<Value>Assets\type4.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="type5.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/type5.png">
+					<Candidate type="Path">
+						<Value>Assets\type5.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Wide310x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="zone.jpg" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/zone.jpg">
+					<Candidate type="Path">
+						<Value>Assets\zone.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="zone.png" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Assets/zone.png">
+					<Candidate type="Path">
+						<Value>Assets\zone.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Microsoft.Toolkit.Uwp.UI.Controls.Core">
+				<NamedResource name="Microsoft.Toolkit.Uwp.UI.Controls.Core.xr.xml" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/Microsoft.Toolkit.Uwp.UI.Controls.Core.xr.xml">
+					<Candidate type="Path">
+						<Value>Microsoft.Toolkit.Uwp.UI.Controls.Core\Microsoft.Toolkit.Uwp.UI.Controls.Core.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="CameraPreview">
+					<NamedResource name="CameraPreview.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/CameraPreview/CameraPreview.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="DropShadowPanel">
+					<NamedResource name="DropShadowPanel.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/DropShadowPanel/DropShadowPanel.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="ImageEx">
+					<NamedResource name="ImageEx.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/ImageEx/ImageEx.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="InAppNotification">
+					<NamedResource name="InAppNotification.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/InAppNotification/InAppNotification.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="Styles">
+						<NamedResource name="MSEdgeNotificationStyle.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/InAppNotification/Styles/MSEdgeNotificationStyle.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="VSCodeNotificationStyle.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/InAppNotification/Styles/VSCodeNotificationStyle.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Loading">
+					<NamedResource name="Loading.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/Loading/Loading.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Menu">
+					<NamedResource name="Menu.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/Menu/Menu.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="MenuItem.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/Menu/MenuItem.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="MetadataControl">
+					<NamedResource name="MetadataControl.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/MetadataControl/MetadataControl.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="RadialProgressBar">
+					<NamedResource name="RadialProgressBar.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/RadialProgressBar/RadialProgressBar.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="RotatorTile">
+					<NamedResource name="RotatorTile.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/RotatorTile/RotatorTile.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="TabbedCommandBar">
+					<NamedResource name="TabbedCommandBar.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/TabbedCommandBar/TabbedCommandBar.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="TabbedCommandBarItem.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/TabbedCommandBar/TabbedCommandBarItem.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="TextToolbar">
+					<NamedResource name="TextToolbar.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/TextToolbar/TextToolbar.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="Symbols">
+						<NamedResource name="Symbols.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/TextToolbar/Symbols/Symbols.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ToolbarItems">
+						<NamedResource name="ToolbarButton.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/TextToolbar/ToolbarItems/ToolbarButton.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ToolbarSeparator.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/TextToolbar/ToolbarItems/ToolbarSeparator.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="TileControl">
+					<NamedResource name="TileControl.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Core/TileControl/TileControl.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid">
+				<NamedResource name="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml">
+					<Candidate type="Path">
+						<Value>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid\Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="DataGrid">
+					<NamedResource name="DataGrid.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/DataGrid/DataGrid.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Microsoft.Toolkit.Uwp.UI.Controls.Input">
+				<NamedResource name="Microsoft.Toolkit.Uwp.UI.Controls.Input.xr.xml" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Input/Microsoft.Toolkit.Uwp.UI.Controls.Input.xr.xml">
+					<Candidate type="Path">
+						<Value>Microsoft.Toolkit.Uwp.UI.Controls.Input\Microsoft.Toolkit.Uwp.UI.Controls.Input.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="ColorPicker">
+					<NamedResource name="ColorPicker.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Input/ColorPicker/ColorPicker.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ColorPickerButton.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Input/ColorPicker/ColorPickerButton.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ColorPickerSlider.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Input/ColorPicker/ColorPickerSlider.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="RadialGauge">
+					<NamedResource name="RadialGauge.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Input/RadialGauge/RadialGauge.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="RangeSelector">
+					<NamedResource name="RangeSelector.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Input/RangeSelector/RangeSelector.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="RemoteDevicePicker">
+					<NamedResource name="RemoteDevicePicker.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Input/RemoteDevicePicker/RemoteDevicePicker.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="RichSuggestBox">
+					<NamedResource name="RichSuggestBox.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Input/RichSuggestBox/RichSuggestBox.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Input/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="TokenizingTextBox">
+					<NamedResource name="TokenizingTextBox.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Input/TokenizingTextBox/TokenizingTextBox.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="TokenizingTextBoxItem.AutoSuggestBox.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Input/TokenizingTextBox/TokenizingTextBoxItem.AutoSuggestBox.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="TokenizingTextBoxItem.Token.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Input/TokenizingTextBox/TokenizingTextBoxItem.Token.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Microsoft.Toolkit.Uwp.UI.Controls.Layout">
+				<NamedResource name="Microsoft.Toolkit.Uwp.UI.Controls.Layout.xr.xml" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Microsoft.Toolkit.Uwp.UI.Controls.Layout.xr.xml">
+					<Candidate type="Path">
+						<Value>Microsoft.Toolkit.Uwp.UI.Controls.Layout\Microsoft.Toolkit.Uwp.UI.Controls.Layout.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="BladeView">
+					<NamedResource name="BladeView.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Layout/BladeView/BladeView.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Carousel">
+					<NamedResource name="Carousel.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Carousel/Carousel.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Expander">
+					<NamedResource name="Expander.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Expander/Expander.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="GridSplitter">
+					<NamedResource name="GridSplitter.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Layout/GridSplitter/GridSplitter.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="HeaderedContentControl">
+					<NamedResource name="HeaderedContentControl.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Layout/HeaderedContentControl/HeaderedContentControl.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="HeaderedItemsControl">
+					<NamedResource name="HeaderedItemsControl.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Layout/HeaderedItemsControl/HeaderedItemsControl.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="LayoutTransformControl">
+					<NamedResource name="LayoutTransformControl.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Layout/LayoutTransformControl/LayoutTransformControl.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="ListDetailsView">
+					<NamedResource name="ListDetailsView.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Layout/ListDetailsView/ListDetailsView.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="OrbitView">
+					<NamedResource name="OrbitView.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Layout/OrbitView/OrbitView.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Microsoft.Toolkit.Uwp.UI.Controls.Markdown">
+				<NamedResource name="Microsoft.Toolkit.Uwp.UI.Controls.Markdown.xr.xml" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/Microsoft.Toolkit.Uwp.UI.Controls.Markdown.xr.xml">
+					<Candidate type="Path">
+						<Value>Microsoft.Toolkit.Uwp.UI.Controls.Markdown\Microsoft.Toolkit.Uwp.UI.Controls.Markdown.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="MarkdownTextBlock">
+					<NamedResource name="MarkdownTextBlock.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/MarkdownTextBlock/MarkdownTextBlock.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Microsoft.Toolkit.Uwp.UI.Controls.Media">
+				<NamedResource name="Microsoft.Toolkit.Uwp.UI.Controls.Media.xr.xml" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Media/Microsoft.Toolkit.Uwp.UI.Controls.Media.xr.xml">
+					<Candidate type="Path">
+						<Value>Microsoft.Toolkit.Uwp.UI.Controls.Media\Microsoft.Toolkit.Uwp.UI.Controls.Media.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Eyedropper">
+					<NamedResource name="Eyedropper.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Media/Eyedropper/Eyedropper.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="EyedropperToolButton.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Media/Eyedropper/EyedropperToolButton.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="ImageCropper">
+					<NamedResource name="ImageCropper.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Media/ImageCropper/ImageCropper.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ImageCropperThumb.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Media/ImageCropper/ImageCropperThumb.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="InfiniteCanvas">
+					<NamedResource name="InfiniteCanvas.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Media/InfiniteCanvas/InfiniteCanvas.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.Toolkit.Uwp.UI.Controls.Media/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Microsoft.UI.Xaml">
+				<ResourceMapSubtree name="DensityStyles">
+					<NamedResource name="Compact.xbf" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Microsoft.UI.Xaml/DensityStyles/Compact.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Properties">
+				<NamedResource name="Default.rd.xml" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/Properties/Default.rd.xml">
+					<Candidate type="Path">
+						<Value>Properties\Default.rd.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinMetadata">
+				<NamedResource name="Windows.winmd" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Files/WinMetadata/Windows.winmd">
+					<Candidate type="Path">
+						<Value>WinMetadata\Windows.winmd</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="FxResources.System.Text.Encoding.CodePages.SR">
+			<NamedResource name="ArgumentNull_Array" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/ArgumentNull_Array">
+				<Candidate type="String">
+					<Value>Array cannot be null.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ArgumentOutOfRange_GetByteCountOverflow" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/ArgumentOutOfRange_GetByteCountOverflow">
+				<Candidate type="String">
+					<Value>Too many characters. The resulting number of bytes is larger than what can be returned as an int.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ArgumentOutOfRange_GetCharCountOverflow" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/ArgumentOutOfRange_GetCharCountOverflow">
+				<Candidate type="String">
+					<Value>Too many bytes. The resulting number of chars is larger than what can be returned as an int.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ArgumentOutOfRange_Index" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/ArgumentOutOfRange_Index">
+				<Candidate type="String">
+					<Value>Index was out of range. Must be non-negative and less than the size of the collection.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ArgumentOutOfRange_IndexCount" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/ArgumentOutOfRange_IndexCount">
+				<Candidate type="String">
+					<Value>Index and count must refer to a location within the string.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ArgumentOutOfRange_IndexCountBuffer" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/ArgumentOutOfRange_IndexCountBuffer">
+				<Candidate type="String">
+					<Value>Index and count must refer to a location within the buffer.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ArgumentOutOfRange_NeedNonNegNum" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/ArgumentOutOfRange_NeedNonNegNum">
+				<Candidate type="String">
+					<Value>Non-negative number required.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ArgumentOutOfRange_Range" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/ArgumentOutOfRange_Range">
+				<Candidate type="String">
+					<Value>Valid values are between {0} and {1}, inclusive.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Argument_CodepageNotSupported" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Argument_CodepageNotSupported">
+				<Candidate type="String">
+					<Value>{0} is not a supported code page.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Argument_EncoderFallbackNotEmpty" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Argument_EncoderFallbackNotEmpty">
+				<Candidate type="String">
+					<Value>Must complete Convert() operation or call Encoder.Reset() before calling GetBytes() or GetByteCount(). Encoder '{0}' fallback '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Argument_EncodingConversionOverflowBytes" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Argument_EncodingConversionOverflowBytes">
+				<Candidate type="String">
+					<Value>The output byte buffer is too small to contain the encoded data, encoding '{0}' fallback '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Argument_EncodingConversionOverflowChars" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Argument_EncodingConversionOverflowChars">
+				<Candidate type="String">
+					<Value>The output char buffer is too small to contain the decoded characters, encoding '{0}' fallback '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Argument_InvalidCharSequenceNoIndex" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Argument_InvalidCharSequenceNoIndex">
+				<Candidate type="String">
+					<Value>String contains invalid Unicode code points.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Argument_RecursiveFallback" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Argument_RecursiveFallback">
+				<Candidate type="String">
+					<Value>Recursive fallback not allowed for character \\u{0:X4}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Argument_RecursiveFallbackBytes" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Argument_RecursiveFallbackBytes">
+				<Candidate type="String">
+					<Value>Recursive fallback not allowed for bytes {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10000" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10000">
+				<Candidate type="String">
+					<Value>Western European (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10001" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10001">
+				<Candidate type="String">
+					<Value>Japanese (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10002" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10002">
+				<Candidate type="String">
+					<Value>Chinese Traditional (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10003" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10003">
+				<Candidate type="String">
+					<Value>Korean (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10004" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10004">
+				<Candidate type="String">
+					<Value>Arabic (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10005" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10005">
+				<Candidate type="String">
+					<Value>Hebrew (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10006" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10006">
+				<Candidate type="String">
+					<Value>Greek (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10007" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10007">
+				<Candidate type="String">
+					<Value>Cyrillic (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10008" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10008">
+				<Candidate type="String">
+					<Value>Chinese Simplified (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10010" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10010">
+				<Candidate type="String">
+					<Value>Romanian (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10017" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10017">
+				<Candidate type="String">
+					<Value>Ukrainian (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10021" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10021">
+				<Candidate type="String">
+					<Value>Thai (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10029" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10029">
+				<Candidate type="String">
+					<Value>Central European (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10079" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10079">
+				<Candidate type="String">
+					<Value>Icelandic (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10081" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10081">
+				<Candidate type="String">
+					<Value>Turkish (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_10082" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_10082">
+				<Candidate type="String">
+					<Value>Croatian (Mac)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1026" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1026">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Turkish Latin-5)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1047" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1047">
+				<Candidate type="String">
+					<Value>IBM Latin-1</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1140" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1140">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (US-Canada-Euro)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1141" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1141">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Germany-Euro)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1142" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1142">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Denmark-Norway-Euro)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1143" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1143">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Finland-Sweden-Euro)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1144" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1144">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Italy-Euro)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1145" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1145">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Spain-Euro)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1146" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1146">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (UK-Euro)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1147" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1147">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (France-Euro)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1148" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1148">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (International-Euro)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1149" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1149">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Icelandic-Euro)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1250" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1250">
+				<Candidate type="String">
+					<Value>Central European (Windows)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1251" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1251">
+				<Candidate type="String">
+					<Value>Cyrillic (Windows)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1252" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1252">
+				<Candidate type="String">
+					<Value>Western European (Windows)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1253" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1253">
+				<Candidate type="String">
+					<Value>Greek (Windows)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1254" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1254">
+				<Candidate type="String">
+					<Value>Turkish (Windows)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1255" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1255">
+				<Candidate type="String">
+					<Value>Hebrew (Windows)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1256" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1256">
+				<Candidate type="String">
+					<Value>Arabic (Windows)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1257" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1257">
+				<Candidate type="String">
+					<Value>Baltic (Windows)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1258" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1258">
+				<Candidate type="String">
+					<Value>Vietnamese (Windows)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_1361" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_1361">
+				<Candidate type="String">
+					<Value>Korean (Johab)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20000" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20000">
+				<Candidate type="String">
+					<Value>Chinese Traditional (CNS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20001" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20001">
+				<Candidate type="String">
+					<Value>TCA Taiwan</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20002" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20002">
+				<Candidate type="String">
+					<Value>Chinese Traditional (Eten)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20003" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20003">
+				<Candidate type="String">
+					<Value>IBM5550 Taiwan</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20004" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20004">
+				<Candidate type="String">
+					<Value>TeleText Taiwan</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20005" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20005">
+				<Candidate type="String">
+					<Value>Wang Taiwan</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20105" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20105">
+				<Candidate type="String">
+					<Value>Western European (IA5)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20106" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20106">
+				<Candidate type="String">
+					<Value>German (IA5)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20107" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20107">
+				<Candidate type="String">
+					<Value>Swedish (IA5)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20108" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20108">
+				<Candidate type="String">
+					<Value>Norwegian (IA5)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20261" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20261">
+				<Candidate type="String">
+					<Value>T.61</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20269" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20269">
+				<Candidate type="String">
+					<Value>ISO-6937</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20273" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20273">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Germany)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20277" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20277">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Denmark-Norway)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20278" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20278">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Finland-Sweden)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20280" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20280">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Italy)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20284" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20284">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Spain)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20285" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20285">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (UK)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20290" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20290">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Japanese katakana)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20297" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20297">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (France)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20420" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20420">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Arabic)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20423" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20423">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Greek)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20424" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20424">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Hebrew)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20833" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20833">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Korean Extended)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20838" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20838">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Thai)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20866" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20866">
+				<Candidate type="String">
+					<Value>Cyrillic (KOI8-R)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20871" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20871">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Icelandic)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20880" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20880">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Cyrillic Russian)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20905" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20905">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Turkish)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20924" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20924">
+				<Candidate type="String">
+					<Value>IBM Latin-1</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20932" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20932">
+				<Candidate type="String">
+					<Value>Japanese (JIS 0208-1990 and 0212-1990)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20936" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20936">
+				<Candidate type="String">
+					<Value>Chinese Simplified (GB2312-80)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_20949" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_20949">
+				<Candidate type="String">
+					<Value>Korean Wansung</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_21025" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_21025">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Cyrillic Serbian-Bulgarian)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_21027" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_21027">
+				<Candidate type="String">
+					<Value>Ext Alpha Lowercase</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_21866" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_21866">
+				<Candidate type="String">
+					<Value>Cyrillic (KOI8-U)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_28592" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_28592">
+				<Candidate type="String">
+					<Value>Central European (ISO)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_28593" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_28593">
+				<Candidate type="String">
+					<Value>Latin 3 (ISO)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_28594" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_28594">
+				<Candidate type="String">
+					<Value>Baltic (ISO)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_28595" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_28595">
+				<Candidate type="String">
+					<Value>Cyrillic (ISO)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_28596" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_28596">
+				<Candidate type="String">
+					<Value>Arabic (ISO)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_28597" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_28597">
+				<Candidate type="String">
+					<Value>Greek (ISO)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_28598" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_28598">
+				<Candidate type="String">
+					<Value>Hebrew (ISO-Visual)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_28599" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_28599">
+				<Candidate type="String">
+					<Value>Turkish (ISO)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_28603" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_28603">
+				<Candidate type="String">
+					<Value>Estonian (ISO)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_28605" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_28605">
+				<Candidate type="String">
+					<Value>Latin 9 (ISO)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_29001" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_29001">
+				<Candidate type="String">
+					<Value>Europa</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_37" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_37">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (US-Canada)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_38598" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_38598">
+				<Candidate type="String">
+					<Value>Hebrew (ISO-Logical)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_437" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_437">
+				<Candidate type="String">
+					<Value>OEM United States</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_500" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_500">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (International)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_50000" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_50000">
+				<Candidate type="String">
+					<Value>User Defined</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_50220" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_50220">
+				<Candidate type="String">
+					<Value>Japanese (JIS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_50221" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_50221">
+				<Candidate type="String">
+					<Value>Japanese (JIS-Allow 1 byte Kana)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_50222" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_50222">
+				<Candidate type="String">
+					<Value>Japanese (JIS-Allow 1 byte Kana - SO/SI)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_50225" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_50225">
+				<Candidate type="String">
+					<Value>Korean (ISO)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_50227" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_50227">
+				<Candidate type="String">
+					<Value>Chinese Simplified (ISO-2022)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_50229" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_50229">
+				<Candidate type="String">
+					<Value>Chinese Traditional (ISO-2022)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_50930" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_50930">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Japanese and Japanese Katakana)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_50931" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_50931">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Japanese and US-Canada)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_50933" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_50933">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Korean and Korean Extended)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_50935" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_50935">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Simplified Chinese)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_50937" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_50937">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Traditional Chinese)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_50939" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_50939">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Japanese and Japanese-Latin)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_51932" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_51932">
+				<Candidate type="String">
+					<Value>Japanese (EUC)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_51936" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_51936">
+				<Candidate type="String">
+					<Value>Chinese Simplified (EUC)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_51949" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_51949">
+				<Candidate type="String">
+					<Value>Korean (EUC)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_52936" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_52936">
+				<Candidate type="String">
+					<Value>Chinese Simplified (HZ)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_54936" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_54936">
+				<Candidate type="String">
+					<Value>Chinese Simplified (GB18030)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_57002" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_57002">
+				<Candidate type="String">
+					<Value>ISCII Devanagari</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_57003" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_57003">
+				<Candidate type="String">
+					<Value>ISCII Bengali</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_57004" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_57004">
+				<Candidate type="String">
+					<Value>ISCII Tamil</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_57005" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_57005">
+				<Candidate type="String">
+					<Value>ISCII Telugu</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_57006" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_57006">
+				<Candidate type="String">
+					<Value>ISCII Assamese</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_57007" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_57007">
+				<Candidate type="String">
+					<Value>ISCII Oriya</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_57008" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_57008">
+				<Candidate type="String">
+					<Value>ISCII Kannada</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_57009" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_57009">
+				<Candidate type="String">
+					<Value>ISCII Malayalam</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_57010" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_57010">
+				<Candidate type="String">
+					<Value>ISCII Gujarati</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_57011" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_57011">
+				<Candidate type="String">
+					<Value>ISCII Punjabi</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_708" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_708">
+				<Candidate type="String">
+					<Value>Arabic (ASMO 708)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_720" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_720">
+				<Candidate type="String">
+					<Value>Arabic (DOS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_737" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_737">
+				<Candidate type="String">
+					<Value>Greek (DOS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_775" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_775">
+				<Candidate type="String">
+					<Value>Baltic (DOS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_850" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_850">
+				<Candidate type="String">
+					<Value>Western European (DOS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_852" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_852">
+				<Candidate type="String">
+					<Value>Central European (DOS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_855" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_855">
+				<Candidate type="String">
+					<Value>OEM Cyrillic</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_857" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_857">
+				<Candidate type="String">
+					<Value>Turkish (DOS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_858" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_858">
+				<Candidate type="String">
+					<Value>OEM Multilingual Latin I</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_860" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_860">
+				<Candidate type="String">
+					<Value>Portuguese (DOS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_861" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_861">
+				<Candidate type="String">
+					<Value>Icelandic (DOS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_862" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_862">
+				<Candidate type="String">
+					<Value>Hebrew (DOS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_863" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_863">
+				<Candidate type="String">
+					<Value>French Canadian (DOS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_864" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_864">
+				<Candidate type="String">
+					<Value>Arabic (864)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_865" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_865">
+				<Candidate type="String">
+					<Value>Nordic (DOS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_866" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_866">
+				<Candidate type="String">
+					<Value>Cyrillic (DOS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_869" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_869">
+				<Candidate type="String">
+					<Value>Greek, Modern (DOS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_870" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_870">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Multilingual Latin-2)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_874" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_874">
+				<Candidate type="String">
+					<Value>Thai (Windows)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_875" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_875">
+				<Candidate type="String">
+					<Value>IBM EBCDIC (Greek Modern)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_932" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_932">
+				<Candidate type="String">
+					<Value>Japanese (Shift-JIS)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_936" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_936">
+				<Candidate type="String">
+					<Value>Chinese Simplified (GB2312)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_949" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_949">
+				<Candidate type="String">
+					<Value>Korean</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Globalization_cp_950" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/Globalization_cp_950">
+				<Candidate type="String">
+					<Value>Chinese Traditional (Big5)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MissingEncodingNameResource" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/MissingEncodingNameResource">
+				<Candidate type="String">
+					<Value>Could not find a resource entry for the encoding codepage '{0} - {1}'</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NotSupported_NoCodepageData" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encoding.CodePages.SR/NotSupported_NoCodepageData">
+				<Candidate type="String">
+					<Value>No data is available for encoding {0}.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="FxResources.System.Text.Encodings.Web.SR">
+			<NamedResource name="TextEncoderDoesNotImplementMaxOutputCharsPerInputChar" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Encodings.Web.SR/TextEncoderDoesNotImplementMaxOutputCharsPerInputChar">
+				<Candidate type="String">
+					<Value>TextEncoder does not implement MaxOutputCharsPerInputChar correctly.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="FxResources.System.Text.Json.SR">
+			<NamedResource name="ArrayDepthTooLarge" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ArrayDepthTooLarge">
+				<Candidate type="String">
+					<Value>The maximum configured depth of {0} has been exceeded. Cannot read next JSON array.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ArrayModifiedDuringIteration" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ArrayModifiedDuringIteration">
+				<Candidate type="String">
+					<Value>The JSON array was modified during iteration.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="BufferMaximumSizeExceeded" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/BufferMaximumSizeExceeded">
+				<Candidate type="String">
+					<Value>Cannot allocate a buffer of size {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="BufferWriterAdvancedTooFar" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/BufferWriterAdvancedTooFar">
+				<Candidate type="String">
+					<Value>Cannot advance past the end of the buffer, which has a size of {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CallFlushToAvoidDataLoss" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CallFlushToAvoidDataLoss">
+				<Candidate type="String">
+					<Value>The JSON writer needs to be flushed before getting the current state. There are {0} bytes that have not been committed to the output.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotDecodeInvalidBase64" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotDecodeInvalidBase64">
+				<Candidate type="String">
+					<Value>Cannot decode JSON text that is not encoded as valid Base64 to bytes.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotEncodeInvalidUTF16" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotEncodeInvalidUTF16">
+				<Candidate type="String">
+					<Value>Cannot encode invalid UTF-16 text as JSON. Invalid surrogate value: '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotEncodeInvalidUTF8" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotEncodeInvalidUTF8">
+				<Candidate type="String">
+					<Value>Cannot encode invalid UTF-8 text as JSON. Invalid input: '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotPopulateCollection" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotPopulateCollection">
+				<Candidate type="String">
+					<Value>The collection type '{0}' is abstract, an interface, or is read only, and could not be instantiated and populated.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotReadIncompleteUTF16" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotReadIncompleteUTF16">
+				<Candidate type="String">
+					<Value>Cannot read incomplete UTF-16 JSON text as string with missing low surrogate.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotReadInvalidUTF16" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotReadInvalidUTF16">
+				<Candidate type="String">
+					<Value>Cannot read invalid UTF-16 JSON text as string. Invalid surrogate value: '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotSerializeInvalidMember" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotSerializeInvalidMember">
+				<Candidate type="String">
+					<Value>The type '{0}' of property '{1}' on type '{2}' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotSerializeInvalidType" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotSerializeInvalidType">
+				<Candidate type="String">
+					<Value>The type '{0}' is invalid for serialization or deserialization because it is a pointer type, is a ref struct, or contains generic parameters that have not been replaced by specific types.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotSkip" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotSkip">
+				<Candidate type="String">
+					<Value>Cannot skip tokens on partial JSON. Either get the whole payload and create a Utf8JsonReader instance where isFinalBlock is true or call TrySkip.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotStartObjectArrayAfterPrimitiveOrClose" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotStartObjectArrayAfterPrimitiveOrClose">
+				<Candidate type="String">
+					<Value>Cannot write the start of an object/array after a single JSON value or outside of an existing closed object/array. Current token type is '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotStartObjectArrayWithoutProperty" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotStartObjectArrayWithoutProperty">
+				<Candidate type="String">
+					<Value>Cannot write the start of an object or array without a property name. Current token type is '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotTranscodeInvalidUtf16" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotTranscodeInvalidUtf16">
+				<Candidate type="String">
+					<Value>Cannot transcode invalid UTF-16 string to UTF-8 JSON text.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotTranscodeInvalidUtf8" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotTranscodeInvalidUtf8">
+				<Candidate type="String">
+					<Value>Cannot transcode invalid UTF-8 JSON text to UTF-16 string.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotWriteCommentWithEmbeddedDelimiter" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotWriteCommentWithEmbeddedDelimiter">
+				<Candidate type="String">
+					<Value>Cannot write a comment value which contains the end of comment delimiter.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotWriteEndAfterProperty" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotWriteEndAfterProperty">
+				<Candidate type="String">
+					<Value>'{0}' is invalid following a property name.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotWritePropertyAfterProperty" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotWritePropertyAfterProperty">
+				<Candidate type="String">
+					<Value>Cannot write a JSON property name following another property name. A JSON value is missing.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotWritePropertyWithinArray" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotWritePropertyWithinArray">
+				<Candidate type="String">
+					<Value>Cannot write a JSON property within an array or as the first JSON token. Current token type is '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotWriteValueAfterPrimitiveOrClose" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotWriteValueAfterPrimitiveOrClose">
+				<Candidate type="String">
+					<Value>Cannot write a JSON value after a single JSON value or outside of an existing closed object/array. Current token type is '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotWriteValueWithinObject" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CannotWriteValueWithinObject">
+				<Candidate type="String">
+					<Value>Cannot write a JSON value within an object without a property name. Current token type is '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CommentHandlingMustBeValid" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/CommentHandlingMustBeValid">
+				<Candidate type="String">
+					<Value>The JsonCommentHandling enum must be set to one of the supported values.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ConstructorMaxOf64Parameters" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ConstructorMaxOf64Parameters">
+				<Candidate type="String">
+					<Value>The constructor '{0}' on type '{1}' may not have more than 64 parameters for deserialization.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ConstructorParamIncompleteBinding" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ConstructorParamIncompleteBinding">
+				<Candidate type="String">
+					<Value>Each parameter in constructor '{0}' on type '{1}' must bind to an object property or field on deserialization. Each parameter name must match with a property or field on the object. The match can be case-insensitive.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ConverterCanConvertNullableRedundant" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ConverterCanConvertNullableRedundant">
+				<Candidate type="String">
+					<Value>The converter '{0}' handles type '{1}' but is being asked to convert type '{2}'. Either create a separate converter for type '{2}' or change the converter's 'CanConvert' method to only return 'true' for a single type.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DefaultIgnoreConditionAlreadySpecified" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/DefaultIgnoreConditionAlreadySpecified">
+				<Candidate type="String">
+					<Value>'IgnoreNullValues' and 'DefaultIgnoreCondition' cannot both be set to non-default values.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DefaultIgnoreConditionInvalid" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/DefaultIgnoreConditionInvalid">
+				<Candidate type="String">
+					<Value>The value cannot be 'JsonIgnoreCondition.Always'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DepthTooLarge" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/DepthTooLarge">
+				<Candidate type="String">
+					<Value>CurrentDepth ({0}) is equal to or larger than the maximum allowed depth of {1}. Cannot write the next JSON object or array.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DeserializeDuplicateKey" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/DeserializeDuplicateKey">
+				<Candidate type="String">
+					<Value>An item with the same property name '{0}' has already been added.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DeserializeNoConstructor" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/DeserializeNoConstructor">
+				<Candidate type="String">
+					<Value>Deserialization of types without a parameterless constructor, a singular parameterized constructor, or a parameterized constructor annotated with '{0}' is not supported. Type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DeserializePolymorphicInterface" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/DeserializePolymorphicInterface">
+				<Candidate type="String">
+					<Value>Deserialization of interface types is not supported. Type '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DeserializeUnableToAssignNull" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/DeserializeUnableToAssignNull">
+				<Candidate type="String">
+					<Value>Unable to assign 'null' to the property or field of type '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DeserializeUnableToAssignValue" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/DeserializeUnableToAssignValue">
+				<Candidate type="String">
+					<Value>Unable to cast object of type '{0}' to type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DeserializeUnableToConvertValue" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/DeserializeUnableToConvertValue">
+				<Candidate type="String">
+					<Value>The JSON value could not be converted to {0}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DeserializeWrongType" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/DeserializeWrongType">
+				<Candidate type="String">
+					<Value>The specified type {0} must derive from the specific value's type {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DictionaryKeyTypeNotSupported" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/DictionaryKeyTypeNotSupported">
+				<Candidate type="String">
+					<Value>The type '{0}' is not a supported Dictionary key type.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EmptyJsonIsInvalid" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/EmptyJsonIsInvalid">
+				<Candidate type="String">
+					<Value>Writing an empty JSON payload (excluding comments) is invalid.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EmptyStringToInitializeNumber" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/EmptyStringToInitializeNumber">
+				<Candidate type="String">
+					<Value>Expected a number, but instead got empty string.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EndOfCommentNotFound" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/EndOfCommentNotFound">
+				<Candidate type="String">
+					<Value>Expected end of comment, but instead reached end of data.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EndOfStringNotFound" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/EndOfStringNotFound">
+				<Candidate type="String">
+					<Value>Expected end of string, but instead reached end of data.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExpectedEndAfterSingleJson" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ExpectedEndAfterSingleJson">
+				<Candidate type="String">
+					<Value>'{0}' is invalid after a single JSON value. Expected end of data.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExpectedEndOfDigitNotFound" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ExpectedEndOfDigitNotFound">
+				<Candidate type="String">
+					<Value>'{0}' is an invalid end of a number. Expected a delimiter.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExpectedFalse" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ExpectedFalse">
+				<Candidate type="String">
+					<Value>'{0}' is an invalid JSON literal. Expected the literal 'false'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExpectedJsonTokens" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ExpectedJsonTokens">
+				<Candidate type="String">
+					<Value>The input does not contain any JSON tokens. Expected the input to start with a valid JSON token, when isFinalBlock is true.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExpectedNextDigitEValueNotFound" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ExpectedNextDigitEValueNotFound">
+				<Candidate type="String">
+					<Value>'{0}' is an invalid end of a number. Expected 'E' or 'e'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExpectedNull" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ExpectedNull">
+				<Candidate type="String">
+					<Value>'{0}' is an invalid JSON literal. Expected the literal 'null'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExpectedOneCompleteToken" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ExpectedOneCompleteToken">
+				<Candidate type="String">
+					<Value>The input does not contain any complete JSON tokens. Expected the input to have at least one valid, complete, JSON token.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExpectedSeparatorAfterPropertyNameNotFound" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ExpectedSeparatorAfterPropertyNameNotFound">
+				<Candidate type="String">
+					<Value>'{0}' is invalid after a property name. Expected a ':'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExpectedStartOfPropertyNotFound" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ExpectedStartOfPropertyNotFound">
+				<Candidate type="String">
+					<Value>'{0}' is an invalid start of a property name. Expected a '"'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExpectedStartOfPropertyOrValueAfterComment" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ExpectedStartOfPropertyOrValueAfterComment">
+				<Candidate type="String">
+					<Value>'{0}' is an invalid start of a property name or value, after a comment.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExpectedStartOfPropertyOrValueNotFound" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ExpectedStartOfPropertyOrValueNotFound">
+				<Candidate type="String">
+					<Value>Expected start of a property name or value, but instead reached end of data.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExpectedStartOfValueNotFound" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ExpectedStartOfValueNotFound">
+				<Candidate type="String">
+					<Value>'{0}' is an invalid start of a value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExpectedTrue" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ExpectedTrue">
+				<Candidate type="String">
+					<Value>'{0}' is an invalid JSON literal. Expected the literal 'true'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExpectedValueAfterPropertyNameNotFound" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ExpectedValueAfterPropertyNameNotFound">
+				<Candidate type="String">
+					<Value>Expected a value, but instead reached end of data.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ExtensionDataCannotBindToCtorParam" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ExtensionDataCannotBindToCtorParam">
+				<Candidate type="String">
+					<Value>The extension data property '{0}' on type '{1}' cannot bind with a parameter in constructor '{2}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FailedToGetLargerSpan" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FailedToGetLargerSpan">
+				<Candidate type="String">
+					<Value>The 'IBufferWriter' could not provide an output buffer that is large enough to continue writing.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormatBoolean" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FormatBoolean">
+				<Candidate type="String">
+					<Value>The JSON value is not in a supported Boolean format.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormatByte" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FormatByte">
+				<Candidate type="String">
+					<Value>Either the JSON value is not in a supported format, or is out of bounds for an unsigned byte.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormatDateTime" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FormatDateTime">
+				<Candidate type="String">
+					<Value>The JSON value is not in a supported DateTime format.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormatDateTimeOffset" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FormatDateTimeOffset">
+				<Candidate type="String">
+					<Value>The JSON value is not in a supported DateTimeOffset format.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormatDecimal" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FormatDecimal">
+				<Candidate type="String">
+					<Value>The JSON value is either too large or too small for a Decimal.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormatDouble" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FormatDouble">
+				<Candidate type="String">
+					<Value>Either the JSON value is not in a supported format, or is out of bounds for a Double.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormatGuid" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FormatGuid">
+				<Candidate type="String">
+					<Value>The JSON value is not in a supported Guid format.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormatInt16" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FormatInt16">
+				<Candidate type="String">
+					<Value>Either the JSON value is not in a supported format, or is out of bounds for an Int16.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormatInt32" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FormatInt32">
+				<Candidate type="String">
+					<Value>Either the JSON value is not in a supported format, or is out of bounds for an Int32.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormatInt64" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FormatInt64">
+				<Candidate type="String">
+					<Value>Either the JSON value is not in a supported format, or is out of bounds for an Int64.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormatSByte" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FormatSByte">
+				<Candidate type="String">
+					<Value>Either the JSON value is not in a supported format, or is out of bounds for a signed byte.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormatSingle" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FormatSingle">
+				<Candidate type="String">
+					<Value>Either the JSON value is not in a supported format, or is out of bounds for a Single.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormatUInt16" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FormatUInt16">
+				<Candidate type="String">
+					<Value>Either the JSON value is not in a supported format, or is out of bounds for a UInt16.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormatUInt32" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FormatUInt32">
+				<Candidate type="String">
+					<Value>Either the JSON value is not in a supported format, or is out of bounds for a UInt32.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FormatUInt64" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FormatUInt64">
+				<Candidate type="String">
+					<Value>Either the JSON value is not in a supported format, or is out of bounds for a UInt64.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="FoundInvalidCharacter" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/FoundInvalidCharacter">
+				<Candidate type="String">
+					<Value>'{0}' is invalid after a value. Expected either ',', '}}', or ']'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="IgnoreConditionOnValueTypeInvalid" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/IgnoreConditionOnValueTypeInvalid">
+				<Candidate type="String">
+					<Value>The ignore condition 'JsonIgnoreCondition.WhenWritingNull' is not valid on value-type member '{0}' on type '{1}'. Consider using 'JsonIgnoreCondition.WhenWritingDefault'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidCast" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/InvalidCast">
+				<Candidate type="String">
+					<Value>Cannot get the value of a token type '{0}' as a {1}.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidCharacterAfterEscapeWithinString" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/InvalidCharacterAfterEscapeWithinString">
+				<Candidate type="String">
+					<Value>'{0}' is an invalid escapable character within a JSON string. The string should be correctly escaped.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidCharacterAtStartOfComment" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/InvalidCharacterAtStartOfComment">
+				<Candidate type="String">
+					<Value>'{0}' is invalid after '/' at the beginning of the comment. Expected either '/' or '*'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidCharacterWithinString" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/InvalidCharacterWithinString">
+				<Candidate type="String">
+					<Value>'{0}' is invalid within a JSON string. The string should be correctly escaped.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidComparison" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/InvalidComparison">
+				<Candidate type="String">
+					<Value>Cannot compare the value of a token type '{0}' to text.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidDuplicatePropertyNameHandling" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/InvalidDuplicatePropertyNameHandling">
+				<Candidate type="String">
+					<Value>The DuplicatePropertyNameHandling enum must be set to one of the supported values.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidEndOfJsonNonPrimitive" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/InvalidEndOfJsonNonPrimitive">
+				<Candidate type="String">
+					<Value>'{0}' is an invalid token type for the end of the JSON payload. Expected either 'EndArray' or 'EndObject'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidHexCharacterWithinString" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/InvalidHexCharacterWithinString">
+				<Candidate type="String">
+					<Value>'{0}' is not a hex digit following '\u' within a JSON string. The string should be correctly escaped.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidLeadingZeroInNumber" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/InvalidLeadingZeroInNumber">
+				<Candidate type="String">
+					<Value>Invalid leading zero before '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="JsonDocumentDoesNotSupportComments" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/JsonDocumentDoesNotSupportComments">
+				<Candidate type="String">
+					<Value>Comments cannot be stored in a JsonDocument, only the Skip and Disallow comment handling modes are supported.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="JsonElementHasWrongType" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/JsonElementHasWrongType">
+				<Candidate type="String">
+					<Value>The requested operation requires an element of type '{0}', but the target element has type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="JsonIncludeOnNonPublicInvalid" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/JsonIncludeOnNonPublicInvalid">
+				<Candidate type="String">
+					<Value>The non-public property '{0}' on type '{1}' is annotated with 'JsonIncludeAttribute' which is invalid.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="JsonObjectDuplicateKey" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/JsonObjectDuplicateKey">
+				<Candidate type="String">
+					<Value>Property with name '{0}' already exists.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="JsonSerializerDoesNotSupportComments" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/JsonSerializerDoesNotSupportComments">
+				<Candidate type="String">
+					<Value>Comments cannot be stored when deserializing objects, only the Skip and Disallow comment handling modes are supported.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MaxDepthMustBePositive" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MaxDepthMustBePositive">
+				<Candidate type="String">
+					<Value>Max depth must be positive.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MetadataCannotParsePreservedObjectToImmutable" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MetadataCannotParsePreservedObjectToImmutable">
+				<Candidate type="String">
+					<Value>Cannot parse a JSON object containing metadata properties like '$id' into an array or immutable collection type. Type '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MetadataDuplicateIdFound" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MetadataDuplicateIdFound">
+				<Candidate type="String">
+					<Value>The value of the '$id' metadata property '{0}' conflicts with an existing identifier.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MetadataIdIsNotFirstProperty" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MetadataIdIsNotFirstProperty">
+				<Candidate type="String">
+					<Value>The metadata property '$id' must be the first property in the JSON object.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MetadataInvalidPropertyWithLeadingDollarSign" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MetadataInvalidPropertyWithLeadingDollarSign">
+				<Candidate type="String">
+					<Value>Properties that start with '$' are not allowed on preserve mode, either escape the character or turn off preserve references by setting ReferenceHandler to null.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MetadataInvalidReferenceToValueType" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MetadataInvalidReferenceToValueType">
+				<Candidate type="String">
+					<Value>Invalid reference to value type '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MetadataInvalidTokenAfterValues" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MetadataInvalidTokenAfterValues">
+				<Candidate type="String">
+					<Value>The '$values' metadata property must be a JSON array. Current token type is '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MetadataPreservedArrayFailed" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MetadataPreservedArrayFailed">
+				<Candidate type="String">
+					<Value>Deserialization failed for one of these reasons:
+1. {0}
+2. {1}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MetadataPreservedArrayInvalidProperty" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MetadataPreservedArrayInvalidProperty">
+				<Candidate type="String">
+					<Value>Invalid property '{0}' found within a JSON object that must only contain metadata properties and the nested JSON array to be preserved.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MetadataPreservedArrayPropertyNotFound" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MetadataPreservedArrayPropertyNotFound">
+				<Candidate type="String">
+					<Value>One or more metadata properties, such as '$id' and '$values', were not found within a JSON object that must only contain metadata properties and the nested JSON array to be preserved.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MetadataReferenceCannotContainOtherProperties" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MetadataReferenceCannotContainOtherProperties">
+				<Candidate type="String">
+					<Value>A JSON object that contains a '$ref' metadata property must not contain any other properties.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MetadataReferenceNotFound" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MetadataReferenceNotFound">
+				<Candidate type="String">
+					<Value>Reference '{0}' not found.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MetadataReferenceOfTypeCannotBeAssignedToType" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MetadataReferenceOfTypeCannotBeAssignedToType">
+				<Candidate type="String">
+					<Value>The object with reference id '{0}' of type '{1}' cannot be assigned to the type '{2}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MetadataValueWasNotString" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MetadataValueWasNotString">
+				<Candidate type="String">
+					<Value>The '$id' and '$ref' metadata properties must be JSON strings. Current token type is '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MismatchedObjectArray" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MismatchedObjectArray">
+				<Candidate type="String">
+					<Value>'{0}' is invalid without a matching open.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MultipleMembersBindWithConstructorParameter" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/MultipleMembersBindWithConstructorParameter">
+				<Candidate type="String">
+					<Value>Members '{0}' and '{1}' on type '{2}' cannot both bind with parameter '{3}' in constructor '{4}' on deserialization.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NamingPolicyReturnNull" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/NamingPolicyReturnNull">
+				<Candidate type="String">
+					<Value>The naming policy '{0}' cannot return null.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NotEnoughData" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/NotEnoughData">
+				<Candidate type="String">
+					<Value>There is not enough data to read through the entire JSON array or object.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NotNodeJsonElementParent" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/NotNodeJsonElementParent">
+				<Candidate type="String">
+					<Value>This JsonElement instance was not built from a JsonNode and is immutable.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NumberHandlingConverterMustBeBuiltIn" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/NumberHandlingConverterMustBeBuiltIn">
+				<Candidate type="String">
+					<Value>'JsonNumberHandlingAttribute' cannot be placed on a property, field, or type that is handled by a custom converter. See usage(s) of converter '{0}' on type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NumberHandlingOnPropertyTypeMustBeNumberOrCollection" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/NumberHandlingOnPropertyTypeMustBeNumberOrCollection">
+				<Candidate type="String">
+					<Value>When 'JsonNumberHandlingAttribute' is placed on a property or field, the property or field must be a number or a collection. See member '{0}' on type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ObjectDepthTooLarge" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ObjectDepthTooLarge">
+				<Candidate type="String">
+					<Value>The maximum configured depth of {0} has been exceeded. Cannot read next JSON object.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ObjectWithParameterizedCtorRefMetadataNotHonored" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ObjectWithParameterizedCtorRefMetadataNotHonored">
+				<Candidate type="String">
+					<Value>Reference metadata is not honored when deserializing types using parameterized constructors. See type '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PropertyNameTooLarge" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/PropertyNameTooLarge">
+				<Candidate type="String">
+					<Value>The JSON property name of length {0} is too large and not supported.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PropertyNotFound" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/PropertyNotFound">
+				<Candidate type="String">
+					<Value>Property with name '{0}' not found.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="PropertyTypeMismatch" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/PropertyTypeMismatch">
+				<Candidate type="String">
+					<Value>Property with name '{0}' has a different type than expected.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RequiredDigitNotFoundAfterDecimal" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/RequiredDigitNotFoundAfterDecimal">
+				<Candidate type="String">
+					<Value>'{0}' is invalid within a number, immediately after a decimal point ('.'). Expected a digit ('0'-'9').</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RequiredDigitNotFoundAfterSign" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/RequiredDigitNotFoundAfterSign">
+				<Candidate type="String">
+					<Value>'{0}' is invalid within a number, immediately after a sign character ('+' or '-'). Expected a digit ('0'-'9').</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RequiredDigitNotFoundEndOfData" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/RequiredDigitNotFoundEndOfData">
+				<Candidate type="String">
+					<Value>Expected a digit ('0'-'9'), but instead reached end of data.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializationConverterNotCompatible" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializationConverterNotCompatible">
+				<Candidate type="String">
+					<Value>The converter '{0}' is not compatible with the type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializationConverterOnAttributeInvalid" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializationConverterOnAttributeInvalid">
+				<Candidate type="String">
+					<Value>The converter specified on '{0}' does not derive from JsonConverter or have a public parameterless constructor.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializationConverterOnAttributeNotCompatible" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializationConverterOnAttributeNotCompatible">
+				<Candidate type="String">
+					<Value>The converter specified on '{0}' is not compatible with the type '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializationConverterRead" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializationConverterRead">
+				<Candidate type="String">
+					<Value>The converter '{0}' read too much or not enough.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializationConverterWrite" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializationConverterWrite">
+				<Candidate type="String">
+					<Value>The converter '{0}' wrote too much or not enough.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializationDataExtensionPropertyInvalid" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializationDataExtensionPropertyInvalid">
+				<Candidate type="String">
+					<Value>The data extension property '{0}.{1}' does not match the required signature of IDictionary&lt;string, JsonElement&gt; or IDictionary&lt;string, object&gt;.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializationDuplicateAttribute" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializationDuplicateAttribute">
+				<Candidate type="String">
+					<Value>The attribute '{0}' cannot exist more than once on '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializationDuplicateTypeAttribute" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializationDuplicateTypeAttribute">
+				<Candidate type="String">
+					<Value>The type '{0}' cannot have more than one property that has the attribute '{1}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializationInvalidBufferSize" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializationInvalidBufferSize">
+				<Candidate type="String">
+					<Value>The value must be greater than zero.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializationNotSupportedParentType" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializationNotSupportedParentType">
+				<Candidate type="String">
+					<Value>The unsupported member type is located on type '{0}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializationNotSupportedType" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializationNotSupportedType">
+				<Candidate type="String">
+					<Value>The type '{0}' is not supported.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializerConverterFactoryReturnsNull" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializerConverterFactoryReturnsNull">
+				<Candidate type="String">
+					<Value>The converter '{0}' cannot return a null value.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializerCycleDetected" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializerCycleDetected">
+				<Candidate type="String">
+					<Value>A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of {0}. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializerOptionsImmutable" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializerOptionsImmutable">
+				<Candidate type="String">
+					<Value>Serializer options cannot be changed once serialization or deserialization has occurred.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializerPropertyNameConflict" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializerPropertyNameConflict">
+				<Candidate type="String">
+					<Value>The JSON property name for '{0}.{1}' collides with another property.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializerPropertyNameNull" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializerPropertyNameNull">
+				<Candidate type="String">
+					<Value>The JSON property name for '{0}.{1}' cannot be null.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializeTypeInstanceNotSupported" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializeTypeInstanceNotSupported">
+				<Candidate type="String">
+					<Value>Serialization and deserialization of 'System.Type' instances are not supported and should be avoided since they can lead to security issues.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SerializeUnableToSerialize" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SerializeUnableToSerialize">
+				<Candidate type="String">
+					<Value>The object or value could not be serialized.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SpecialNumberValuesNotSupported" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/SpecialNumberValuesNotSupported">
+				<Candidate type="String">
+					<Value>.NET number values such as positive and negative infinity cannot be written as valid JSON.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="StreamNotWritable" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/StreamNotWritable">
+				<Candidate type="String">
+					<Value>Stream is not writable.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TrailingCommaNotAllowedBeforeArrayEnd" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/TrailingCommaNotAllowedBeforeArrayEnd">
+				<Candidate type="String">
+					<Value>The JSON array contains a trailing comma at the end which is not supported in this mode. Change the reader options.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TrailingCommaNotAllowedBeforeObjectEnd" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/TrailingCommaNotAllowedBeforeObjectEnd">
+				<Candidate type="String">
+					<Value>The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UnexpectedEndOfDataWhileReadingComment" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/UnexpectedEndOfDataWhileReadingComment">
+				<Candidate type="String">
+					<Value>Unexpected end of data while reading a comment.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UnexpectedEndOfLineSeparator" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/UnexpectedEndOfLineSeparator">
+				<Candidate type="String">
+					<Value>Found invalid line or paragraph separator character while reading a comment.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ValueTooLarge" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ValueTooLarge">
+				<Candidate type="String">
+					<Value>The JSON value of length {0} is too large and not supported.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ZeroDepthAtEnd" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/FxResources.System.Text.Json.SR/ZeroDepthAtEnd">
+				<Candidate type="String">
+					<Value>Expected depth to be zero at the end of the JSON payload. There is an open JSON object or array that should be closed.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Data.Sqlite.Properties.Resources">
+			<NamedResource name="AmbiguousParameterName" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/AmbiguousParameterName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot bind the value for parameter '{parameterName}' because multiple matching parameters were found in the command text. Specify the parameter name with the symbol prefix, e.g. '@{parameterName}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CalledOnNullValue" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/CalledOnNullValue">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The data is NULL at ordinal {ordinal}. This method can't be called on NULL values. Check using IsDBNull before calling.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CallRequiresOpenConnection" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/CallRequiresOpenConnection">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>{methodName} can only be called when the connection is open.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CallRequiresSetCommandText" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/CallRequiresSetCommandText">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>CommandText must be set before {methodName} can be called.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="CannotStoreNaN" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/CannotStoreNaN">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot store 'NaN' values.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ConnectionStringRequiresClosedConnection" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/ConnectionStringRequiresClosedConnection">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>ConnectionString cannot be set when the connection is open.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ConvertFailed" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/ConvertFailed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Cannot convert object of type '{sourceType}' to object of type '{targetType}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataReaderClosed" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/DataReaderClosed">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Invalid attempt to call {operation} when reader is closed.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataReaderOpen" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/DataReaderOpen">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An open reader is already associated with this command. Close it before opening a new one.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DefaultNativeError" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/DefaultNativeError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>For more information on this error code see https://www.sqlite.org/rescode.html</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="EncryptionNotSupported" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/EncryptionNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>You specified a password in the connection string, but the native SQLite library '{libraryName}' doesn't support encryption.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidCommandType" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/InvalidCommandType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The CommandType '{commandType}' is not supported.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidEnumValue" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/InvalidEnumValue">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The {enumType} enumeration value, {value}, is invalid.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidIsolationLevel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/InvalidIsolationLevel">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The IsolationLevel '{isolationLevel}' is not supported.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidOffsetAndCount" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/InvalidOffsetAndCount">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Offset and count were out of bounds for the buffer.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InvalidParameterDirection" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/InvalidParameterDirection">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The ParameterDirection '{direction}' is not supported.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="KeywordNotSupported" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/KeywordNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Connection string keyword '{keyword}' is not supported. For a possible alternative, see https://go.microsoft.com/fwlink/?linkid=2142181.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MissingParameters" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/MissingParameters">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Must add values for the following parameters: {parameters}</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NoData" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/NoData">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No data exists for the row/column.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="OpenRequiresSetConnectionString" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/OpenRequiresSetConnectionString">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>ConnectionString must be set before Open can be called.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ParallelTransactionsNotSupported" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/ParallelTransactionsNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>SqliteConnection does not support nested transactions.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ParameterNotFound" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/ParameterNotFound">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>A SqliteParameter with ParameterName '{parameterName}' is not contained by this SqliteParameterCollection.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="RequiresSet" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/RequiresSet">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>{propertyName} must be set.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ResizeNotSupported" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/ResizeNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The size of a blob may not be changed by the SqliteBlob API. Use an UPDATE command instead.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SeekBeforeBegin" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/SeekBeforeBegin">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An attempt was made to move the position before the beginning of the stream.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SetRequiresNoOpenReader" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/SetRequiresNoOpenReader">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>An open reader is associated with this command. Close it before changing the {propertyName} property.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SqlBlobRequiresOpenConnection" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/SqlBlobRequiresOpenConnection">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>SqliteBlob can only be used when the connection is open.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SqliteNativeError" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/SqliteNativeError">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>SQLite Error {errorCode}: '{message}'.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TransactionCompleted" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/TransactionCompleted">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>This SqliteTransaction has completed; it is no longer usable.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TransactionConnectionMismatch" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/TransactionConnectionMismatch">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The transaction object is not associated with the same connection object as this command.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="TransactionRequired" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/TransactionRequired">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Execute requires the command to have a transaction object when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UDFCalledWithNull" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/UDFCalledWithNull">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>The SQL function '{function}' was called with a NULL argument at ordinal {ordinal}. Create the function using a Nullable parameter or rewrite your query to avoid passing NULL.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="UnknownDataType" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/UnknownDataType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>No mapping exists from object type {typeName} to a known managed provider native type.</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="WriteNotSupported" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Data.Sqlite.Properties.Resources/WriteNotSupported">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Stream does not support writing.</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Toolkit.Uwp.UI.Controls.Core">
+			<ResourceMapSubtree name="Resources">
+				<NamedResource name="WCT_InAppNotification_DismissButton_AutomationName" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_InAppNotification_DismissButton_AutomationName">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Dismiss</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_BoldLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_BoldLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Bold</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_CancelLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_CancelLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cancel</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_CodeLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_CodeLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Code</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_CreateLinkLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_CreateLinkLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Create Link</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_EmptyTextLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_EmptyTextLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Empty Text</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_HeaderLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_HeaderLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Header</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_ItalicsLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_ItalicsLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Italics</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_LabelLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_LabelLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Label</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_LinkInvalidLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_LinkInvalidLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Link Invalid</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_LinkLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_LinkLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Link</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_ListLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_ListLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>List</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_OkLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_OkLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Ok</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_OrderedListLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_OrderedListLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Ordered List</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_QuoteLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_QuoteLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Quote</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_RelativeLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_RelativeLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Relative</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_StrikethroughLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_StrikethroughLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Strikethrough</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_UnderlineLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_UnderlineLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Underline</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_UrlLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_UrlLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Url</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TextToolbar_WarningLabel" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_TextToolbar_WarningLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Warning</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="WCT_InAppNotification_LandmarkProperty">
+					<NamedResource name="Value" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Core/Resources/WCT_InAppNotification_LandmarkProperty/Value">
+						<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+							<Value>Notification</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Toolkit.Uwp.UI.Controls.Input">
+			<ResourceMapSubtree name="Resources">
+				<NamedResource name="WCT_TokenizingTextBoxItem_MenuFlyout_Remove" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Input/Resources/WCT_TokenizingTextBoxItem_MenuFlyout_Remove">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Remove</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_TokenizingTextBox_MenuFlyout_SelectAll" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Input/Resources/WCT_TokenizingTextBox_MenuFlyout_SelectAll">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Select All</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Toolkit.Uwp.UI.Controls.Layout">
+			<ResourceMapSubtree name="Resources">
+				<NamedResource name="WCT_BladeView_ExpandButton_Collapsed" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Resources/WCT_BladeView_ExpandButton_Collapsed">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Collapse Blade</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_BladeView_ExpandButton_Expanded" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Resources/WCT_BladeView_ExpandButton_Expanded">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Expand Blade</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WCT_GridSplitter_AutomationName" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Resources/WCT_GridSplitter_AutomationName">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>GridSplitter</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Toolkit.Uwp.UI.Controls.Resources">
+			<NamedResource name="DataGridRowAutomationPeer_ItemType" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Resources/DataGridRowAutomationPeer_ItemType">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>row</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataGridRowGroupHeader_ItemCountPlural" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Resources/DataGridRowGroupHeader_ItemCountPlural">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>({0} items)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataGridRowGroupHeader_ItemCountSingular" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Resources/DataGridRowGroupHeader_ItemCountSingular">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>({0} item)</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DataGridRowGroupHeader_PropertyName" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Resources/DataGridRowGroupHeader_PropertyName">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>{0}:</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DefaultRowGroupHeaderPropertyNameAlternative" uri="ms-resource://6b8bb393-4ac4-4dce-96b0-b5e728928102/Microsoft.Toolkit.Uwp.UI.Controls.Resources/DefaultRowGroupHeaderPropertyNameAlternative">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Group</Value>
+				</Candidate>
+			</NamedResource>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

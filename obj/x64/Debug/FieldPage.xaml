@@ -1,0 +1,325 @@
+﻿<Page
+    x:Class="MMSS.FieldPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MMSS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            
+            <StackPanel Orientation="Vertical">
+                <Grid x:ConnectionId='14' x:Name="FieldZone" 
+                      Height="600" 
+                      Margin="20,20,20,20" >
+                    <Image x:ConnectionId='15' x:Name="FiledImage"
+                           Source="/Assets/Field_Top.png"
+                           RenderTransformOrigin="0.0,0.0" 
+                                                      >
+                        <FlyoutBase.AttachedFlyout>
+                            <MenuFlyout Placement="Left" 
+                                        ShowMode="Transient">
+                                <MenuFlyoutItem x:ConnectionId='44' 
+                                        Name="MenuFlyItemOut" 
+                                        Text="凡打" 
+                                                           />
+                                <MenuFlyoutSubItem x:ConnectionId='45' 
+                                        Name="MenuFlyItemHit" 
+                                        Text="安打">
+                                    <MenuFlyoutItem x:ConnectionId='54' 
+                                            Name="MenuFlyItemSingle" 
+                                            Text="シングル" 
+                                                               />
+                                    <MenuFlyoutItem x:ConnectionId='55' 
+                                            Name="MenuFlyItemTwoBase" 
+                                            Text="ツーベース" 
+                                                               />
+                                    <MenuFlyoutItem x:ConnectionId='56' 
+                                            Name="MenuFlyItemThreeBase" 
+                                            Text="スリーベース" 
+                                                               />
+                                    <MenuFlyoutItem x:ConnectionId='57' 
+                                            Name="MenuFlyItemHomeRun" 
+                                            Text="ホームラン" 
+                                                               />
+                                </MenuFlyoutSubItem>
+                                <MenuFlyoutItem x:ConnectionId='46' 
+                                        Name="MenuFlyItemError" 
+                                        Text="エラー"
+                                                           />
+                                <MenuFlyoutItem x:ConnectionId='47' 
+                                        Name="MenuFlyItemFeilder" 
+                                        Text="野選"
+                                                           />
+                                <MenuFlyoutSubItem x:ConnectionId='48' 
+                                        Name="MenuFlyItemOthers" 
+                                        Text="その他">
+                                    <MenuFlyoutItem x:ConnectionId='50' 
+                                            Name="MenuFlyItemDBB" 
+                                            Text="死球" 
+                                                                Visibility="Collapsed"/>
+                                    
+                                    <MenuFlyoutItem x:ConnectionId='51' 
+                                            Name="MenuFlyItemStrikeRun" 
+                                            Text="振り逃げ" 
+                                                               />
+                                    <MenuFlyoutItem x:ConnectionId='52' 
+                                            Name="MenuFlyItemS_bunt" 
+                                            Text="犠打" 
+                                                               />
+                                    <MenuFlyoutItem x:ConnectionId='53' 
+                                            Name="MenuFlyItemS_fly" 
+                                            Text="犠飛" 
+                                                               />
+                                </MenuFlyoutSubItem>
+                                <MenuFlyoutItem x:ConnectionId='49' 
+                                        Name="MenuFlyItemCancel" 
+                                        Text="キャンセル"
+                                                           />
+                            </MenuFlyout>
+                        </FlyoutBase.AttachedFlyout>
+
+                    </Image>
+                    <Button x:ConnectionId='16' x:Name="投手_btn" Visibility="Collapsed" Content="投手" Margin="0,428,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"                                                                          />
+                    <Button x:ConnectionId='17' x:Name="捕手_btn" Visibility="Collapsed" Content="捕手" Margin="0,519,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"                                                                          />
+                    <Button x:ConnectionId='18' x:Name="一塁手_btn" Visibility="Collapsed" Content="一塁手" Margin="484,407,0,0" VerticalAlignment="Top"                                                                          />
+                    <Button x:ConnectionId='19' x:Name="二塁手_btn" Visibility="Collapsed" Content="二塁手" Margin="467,341,0,0" VerticalAlignment="Top"                                                                          />
+                    <Button x:ConnectionId='20' x:Name="三塁手_btn" Visibility="Collapsed" Content="三塁手" Margin="283,412,0,0" VerticalAlignment="Top"                                                                          />
+                    <Button x:ConnectionId='21' x:Name="遊撃手_btn" Visibility="Collapsed" Content="遊撃手" Margin="314,341,0,0" VerticalAlignment="Top"                                                                          />
+                    <Button x:ConnectionId='22' x:Name="左翼手_btn" Visibility="Collapsed" Content="左翼手" Margin="221,227,0,0" VerticalAlignment="Top"                                                                          />
+                    <Button x:ConnectionId='23' x:Name="中堅手_btn" Visibility="Collapsed" Content="中堅手" Margin="377,179,0,0" VerticalAlignment="Top"                                                                          />
+                    <Button x:ConnectionId='24' x:Name="右翼手_btn" Visibility="Collapsed" Content="右翼手" Margin="561,227,0,0" VerticalAlignment="Top"                                                                          />
+                    <StackPanel x:ConnectionId='25' Orientation="Vertical" 
+                                Height="140" Width="120" 
+                                x:Name="BatterSP" Margin="355,455,355,10">
+                        <Grid Margin="5,5,5,5">
+                            <Image x:ConnectionId='43' x:Name="HomeSafeImage"
+                               Source="/Assets/Safe.png"
+                               AllowDrop="True"
+                               CanDrag="True"
+                                                          
+                               Height="35" 
+                                                         
+                                   Visibility="Collapsed"/>
+                        </Grid>
+                        <Grid Margin="5,5,5,5">
+                            <Image x:ConnectionId='42' x:Name="BatterImage" 
+                               Source="/Assets/Batter.png" 
+                               Height="30"
+                               CanDrag="True"
+                               AllowDrop="True"
+                                   Visibility="Collapsed" 
+                                                         
+                                                                
+                                                                     
+                               />
+                        </Grid>
+                        <Grid Margin="5,5,5,5">
+                            <Image x:ConnectionId='41' x:Name="HomeOutImage"
+                               Source="/Assets/Out.png"
+                               AllowDrop="True"
+                                                          
+                               Height="35" 
+                                                         
+                                   Visibility="Collapsed"/>
+                        </Grid>
+                    </StackPanel>
+
+                    <StackPanel x:ConnectionId='26' Orientation="Vertical" 
+                                Height="140" Width="120" 
+                                x:Name="Runner_1_SP" Margin="475,365,235,115">
+                        <Grid Margin="5,5,5,5">
+                            <Image x:ConnectionId='40' x:Name="Runner_1_SafeImage"
+                               Source="/Assets/Safe.png"
+                               AllowDrop="True"
+                                                          
+                                                         
+                               Height="35"
+                               Visibility="Collapsed" 
+                                                               />
+                        </Grid>
+                        <Grid x:ConnectionId='37' Margin="5,5,5,5" Name="Runner_1_Image_Grid">
+                            <Image x:ConnectionId='39' x:Name="Runner_1_Image" 
+                               Source="/Assets/Runner_1.png" 
+                               Height="30"
+                               CanDrag="True"
+                                   Visibility="Collapsed"
+                                                          
+                                                          
+                                                               
+                                                                     
+                                                                         
+                               />
+                        </Grid>
+                        <Grid Margin="5,5,5,5">
+                            <Image x:ConnectionId='38' x:Name="Runner_1_OutImage"
+                               Source="/Assets/Out.png"
+                               AllowDrop="True"
+                                                          
+                                                         
+                                   Visibility="Collapsed"
+                               Height="35"/>
+                        </Grid>
+                    </StackPanel>
+
+                    <StackPanel x:ConnectionId='27' Orientation="Vertical" 
+                                Height="140" Width="120" 
+                                x:Name="Runner_2_SP" Margin="355,273,355,207">
+                        <Grid Margin="5,5,5,5">
+                            <Image x:ConnectionId='36' x:Name="Runner_2_SafeImage"
+                                   Source="/Assets/Safe.png"
+                                   AllowDrop="True"
+                                                              
+                                   Height="35"    
+                                                         
+                                   Visibility="Collapsed" 
+                                   />
+                        </Grid>
+                        <Grid x:ConnectionId='33' 
+                            Margin="5,5,5,5" 
+                            Name="Runner_2_Image_Grid"
+                            BorderBrush="Transparent"
+                            BorderThickness="1">
+                            <Image x:ConnectionId='35' x:Name="Runner_2_Image" 
+                               Source="/Assets/Runner_2.png" 
+                               Height="30"
+                               CanDrag="True"
+                                                         
+                                   Visibility="Collapsed" 
+                                                         
+                                                               
+                                                                     
+                                                                         />
+                        </Grid>
+                        <Grid Margin="5,5,5,5">
+                            <Image x:ConnectionId='34' x:Name="Runner_2_OutImage"
+                               Source="/Assets/Out.png"
+                               AllowDrop="True"
+                                                          
+                               Height="35"
+                                                         
+                                   Visibility="Collapsed"
+                                                               />
+                        </Grid>
+                    </StackPanel>
+
+                    <StackPanel x:ConnectionId='28' Orientation="Vertical" 
+                                Height="140" Width="120" 
+                                x:Name="Runner_3_SP" 
+                                Margin="230,365,480,115">
+
+                        <Grid x:ConnectionId='29' Margin="5,5,5,5" Name="Runner_3_Image_Grid">
+                            <Image x:ConnectionId='32' x:Name="Runner_3_SafeImage"
+                               Source="/Assets/Safe.png"
+                               AllowDrop="True"
+                                                          
+                               Height="35"
+                                                         
+                                   Visibility="Collapsed"
+                                                                         />
+                        </Grid>
+                        <Grid Margin="5,5,5,5">
+                            <Image x:ConnectionId='31' x:Name="Runner_3_Image" 
+                                   Source="/Assets/Runner_3.png" 
+                                   Height="30"
+                                   CanDrag="True"
+                                                             
+                                   Visibility="Collapsed" 
+                                                                
+                                                                     
+                                                                         />
+                        </Grid>
+                        <Grid Margin="5,5,5,5">
+                            <Image x:ConnectionId='30' x:Name="Runner_3_OutImage"
+                               Source="/Assets/Out.png"
+                               AllowDrop="True"
+                                                          
+                               Height="35" 
+                                                         
+                                   Visibility="Collapsed"
+                                   VerticalAlignment="Bottom"/>
+                        </Grid>
+                    </StackPanel>
+
+
+                </Grid>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <StackPanel x:ConnectionId='2' x:Name="Hit_SPH" Orientation="Horizontal"
+                            Margin="10,10,0,0">
+                    <StackPanel.ChildrenTransitions>
+                        <TransitionCollection>
+                            <EntranceThemeTransition IsStaggeringEnabled="True" />
+                        </TransitionCollection>
+                    </StackPanel.ChildrenTransitions>
+                    <TextBlock x:ConnectionId='12' x:Name="Hit_TB" Text="H "/>
+                    <Ellipse x:ConnectionId='13' x:Name="Hit_lamp" Height="20" Width="20" Stroke="Black"/>
+                </StackPanel>
+                <StackPanel x:ConnectionId='3' 
+                    x:Name="Error_SPH" 
+                    Orientation="Horizontal"
+                    Margin="10,0,0,0">
+                    <StackPanel.ChildrenTransitions>
+                        <TransitionCollection>
+                            <EntranceThemeTransition IsStaggeringEnabled="True" />
+                        </TransitionCollection>
+                    </StackPanel.ChildrenTransitions>
+                    <TextBlock x:ConnectionId='10' x:Name="Error_TB" Text="E "/>
+                    <Ellipse x:ConnectionId='11' x:Name="Error_lamp" Height="20" Width="20" Stroke="Black"/>
+                </StackPanel>
+
+                <StackPanel x:ConnectionId='4' 
+                    x:Name="Field_SPH" 
+                    Orientation="Horizontal"
+                    Margin="10,0,0,10"
+                    >
+                    <StackPanel.ChildrenTransitions>
+                        <TransitionCollection>
+                            <EntranceThemeTransition IsStaggeringEnabled="True" />
+                        </TransitionCollection>
+                    </StackPanel.ChildrenTransitions>
+                    <TextBlock x:ConnectionId='8' x:Name="Feilder_TB" Text="Fe"/>
+                    <Ellipse x:ConnectionId='9' x:Name="Feilder_lamp" Height="20" Width="20" Stroke="Black"/>
+                </StackPanel>
+                <ComboBox x:ConnectionId='5'
+                        x:Name="HitTypeComboBox"
+                        PlaceholderText="打球タイプ"
+                                                                           
+                        Margin="10">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock
+                                Text="{Binding hit_type}"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <Grid CanDrag="True">
+                    <Button x:ConnectionId='6' x:Name="take1" 
+                        Content="守備登録"
+                        CanDrag="True" 
+                                                
+                        Width="100"
+                        Height="40"
+                        Margin="10"
+                        VerticalAlignment="Top"/>
+                    <!--
+                    <Button x:Name="StealRunner_1_btn"/>
+                    <Button x:Name="StealRunner_2_btn"/>
+                    <Button x:Name="StealRunner_3_btn"/>
+                    -->
+
+                </Grid>
+                
+
+            </StackPanel>
+
+
+        </StackPanel>
+
+
+    </Grid>
+</Page>
+
